@@ -67,28 +67,11 @@ body {
 	margin: auto;
 	width: 900px;
 	border: 1px solid red;
+	padding: 30px
 }
 
-.card {
-	/*float: left;*/display: inline-block; 
-	border: 1px solid red;
-}
 
-.card li {
-	list-style: none;
-}
-
-.image img {
-	max-width: 150px;
-	height: 180px;
-}
-
-.caption {
-	width: 150px;
-	height: 30px;
-}
-
+/*End Card Style-*/
 .clear {
 	clear: both;
 }
-/*End Card Style-*/
