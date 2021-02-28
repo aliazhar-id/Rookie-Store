@@ -1,0 +1,94 @@
+/*Start General Style*/
+body {
+	background: #ddd;
+	margin: 0;
+	font-family: sans-serif;
+	/*border: 1px solid white;*/
+}
+/*End General Style*/
+
+/*Start Navbar Style*/
+.navbar {
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	height: 50px;
+	box-shadow: 0 0.3px 5px blue;
+	z-index: 999;
+	top: 0;
+
+}
+
+.navbar a {
+	text-decoration: none;
+
+}
+
+.brand {
+	position: absolute;
+	/*top: 10px;*/
+	left: 50px;
+	font-size: 38px;
+	font-family: 'Righteous', cursive;
+	color: #387AF2;
+	transition: 1s;
+}
+
+.brand:hover {
+	color: #1142C0;
+}
+
+.login {
+	position: absolute;
+	right: 40px;
+	top: 10px;
+	background-color: #387AF2;
+	color: #fff;
+	width: 150px;
+	height: 25px;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	border: 0.3px solid black;
+	transition: 0.3s;
+}
+
+.login:hover {
+	background-color: #1142C0;
+}
+/*End Navbar Style*/
+
+/*Start Card Style*/
+.container {
+	position: relative;
+	top: 150px;
+	margin: auto;
+	width: 900px;
+	border: 1px solid red;
+}
+
+.card {
+	/*float: left;*/display: inline-block; 
+	border: 1px solid red;
+}
+
+.card li {
+	list-style: none;
+}
+
+.image img {
+	max-width: 150px;
+	height: 180px;
+}
+
+.caption {
+	width: 150px;
+	height: 30px;
+}
+
+.clear {
+	clear: both;
+}
+/*End Card Style*/
