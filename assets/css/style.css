@@ -58,10 +58,44 @@ body {
 .login:hover {
 	background-color: #1142C0;
 }
+
+#forum {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #333;
+	z-index: 998;
+	display: none;
+}
+
+#forum:target {
+	display: block;
+}
+form {
+	background-color: #fff;
+	width: 400px;
+	top: 150px;
+	z-index: 999;
+	height: 400px;
+	margin: 150px auto;
+	border-radius: 10px;
+	/*position: relative;*/
+}
+
+.forum-container {
+	position: absolute;
+	top: 250px;
+	left: 600px;
+}
+label, input {
+	display: block;
+}
 /*End Navbar Style*/
 
 /*Start Card Style*/
-.container {
+.card-container {
 	position: relative;
 	top: 150px;
 	margin: auto;
@@ -70,6 +104,21 @@ body {
 	padding: 30px
 }
 
+.card {
+	border: 1px solid red;
+	width: 50%
+}
+
+.card-image {
+	border: 1px solid blue;
+	/*width: 12.5em;*/
+	overflow: hidden;
+}
+
+.card-desc {
+	border: 1px solid green;
+	/*width: 12.5em;*/
+}
 
 /*End Card Style-*/
 .clear {
