@@ -61,37 +61,13 @@ body {
 
 #forum {
 	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	height: 100%;
+	width: 100%;
 	background-color: #333;
-	z-index: 998;
+	z-index: 999;
 	display: none;
 }
 
-#forum:target {
-	display: block;
-}
-form {
-	background-color: #fff;
-	width: 400px;
-	top: 150px;
-	z-index: 999;
-	height: 400px;
-	margin: 150px auto;
-	border-radius: 10px;
-	/*position: relative;*/
-}
-
-.forum-container {
-	position: absolute;
-	top: 250px;
-	left: 600px;
-}
-label, input {
-	display: block;
-}
 /*End Navbar Style*/
 
 /*Start Card Style*/
@@ -105,19 +81,35 @@ label, input {
 }
 
 .card {
-	border: 1px solid red;
-	width: 50%
+	/*border: 1px solid red;*/
+	width: 164px;
+	float: left;
+	box-sizing: border-box;
+	margin: 8px;
+	background-color: #fff;
+	border-radius: 5%;
+	overflow: hidden;  
 }
 
 .card-image {
-	border: 1px solid blue;
+	/*border: 1px solid blue;*/
 	/*width: 12.5em;*/
-	overflow: hidden;
+	/*overflow: hidden;*/
+}
+
+.card img {
+	width: 100%;
 }
 
 .card-desc {
-	border: 1px solid green;
+	/*border: 1px solid green;*/
 	/*width: 12.5em;*/
+	margin-left: 3%;
+	
+}
+
+.card a {
+	text-decoration: none;
 }
 
 /*End Card Style-*/
