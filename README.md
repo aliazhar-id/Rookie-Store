@@ -1,6 +1,6 @@
 # LiShop
 LiShop is Gaming Shop :D
 
-Release in : [aliazhar.my.id](https://aliazhar.my.id)<base target="_blank">
+Release in : <a href="https://aliazhar.my.id" onclick="return ! window.open(this.href);">aliazhar.my.id</a>
 
-Developement in : [dev.aliazhar.my.id](https://dev.aliazhar.my.id)<base target="_blank">
+Developement in : <a href="https://aliazhar.my.id" onclick="return ! window.open(this.href);">aliazhar.my.id</a>
