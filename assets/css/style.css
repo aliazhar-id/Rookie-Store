@@ -37,12 +37,12 @@ body {
 	font-size: 16px;
 	border-radius: 15px;
 	text-align: center;
-	border: 1px solid black;
+	border: 2px solid black;
 }
 
 .login a {
 	text-decoration: none;
-	line-height: 25px;
+	line-height: 22px;
 	font-family: sans-serif;
 	font-weight: bold;
 	color: #fff;
@@ -50,6 +50,28 @@ body {
 
 .login:hover {
 	background-color: #1142c0;
+	border: 2px solid #444;
+}
+
+#login {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.1);
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+}
+
+#login:target {
+	display: flex;
+}
+
+.forum {
+	background-color: #ddd;
+	width: 50%;
+	height: 80%;
 }
 /*End Navbar Style*/
 
