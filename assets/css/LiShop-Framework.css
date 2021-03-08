@@ -8,7 +8,7 @@
   border: 1px solid red;
 }
 
-.row::after {
+.container::after {
   content: "";
   clear: both;
   display: table;
