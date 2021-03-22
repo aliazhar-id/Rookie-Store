@@ -94,14 +94,18 @@ body {
 	border: 2px solid #47B5FB;
 	box-shadow: 3px 3px 5px #aaa;
 	transition: .5s;
+	font-family: 'Muli', sans-serif;
+	background-color: #95F7DF;
 }
 
 .forum input:focus {
 		border: 2px solid #0BF3F0;
+		background-color: #0BCBFB;
 }
 
 .forum label {
 	font-weight: bold;
+	font-family: 'Muli', sans-serif;
 }
 
 .forum-brand {
