@@ -290,6 +290,12 @@ body {
 	box-shadow: 0 0 5px 1px #eee;
 }
 
+#footer .material-icons {
+	line-height: 0;
+	position: relative;
+	top: 5px;
+}
+
 .bulb:hover {
 	color: #E17AC8;
 }
