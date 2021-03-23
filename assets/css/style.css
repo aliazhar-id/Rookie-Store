@@ -70,7 +70,7 @@ body {
 }
 
 .forum {
-	background-color: #eee;
+	background: linear-gradient(to bottom right,#eee, #999);
 	height: 80%;
 	display: flex;
 	justify-content: center;
@@ -78,8 +78,34 @@ body {
 	flex-direction: column;
 	vertical-align: middle;
 	border-radius: 50px;
-	box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.2);
+	box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.4);
 	position: relative;
+}
+
+.btnclose {
+	position: relative;
+	right: -55%;
+	top: -30%;
+	color: #eee;
+	text-shadow: 0 0 5px #333;
+
+}
+
+.btnclose .material-icons {
+	font-size: 50px;
+}
+
+@media only screen and (max-width: 650px) {
+	.btnclose {
+		position: relative;
+		right: -45%;
+		top: -21%;
+		color: #fff;
+	}
+
+	.btnclose .material-icons {
+		font-size: 50px;
+	}
 }
 
 .forum input {
@@ -92,7 +118,7 @@ body {
 	border-radius: 15px;
 	padding: 3%;
 	border: 2px solid #47B5FB;
-	box-shadow: 3px 3px 5px #aaa;
+	box-shadow: 3px 3px 5px #888;
 	transition: .5s;
 	font-family: 'Muli', sans-serif;
 	background-color: #95F7DF;
@@ -101,11 +127,14 @@ body {
 .forum input:focus {
 		border: 2px solid #0BF3F0;
 		background-color: #0BCBFB;
+		box-shadow: 3px 3px 5px #666;
 }
 
 .forum label {
 	font-weight: bold;
 	font-family: 'Muli', sans-serif;
+	position: relative;
+	left: -33%;
 }
 
 .forum-brand {
@@ -114,6 +143,28 @@ body {
 	color: #0ABCF7;
 	text-shadow: 0px 0px 3px black;
 	font-family: 'Righteous', cursive;
+}
+
+.fpw, .nacc {
+	position: relative;
+	text-decoration: none;
+	font-family: 'verdana',serif;
+	color: #066C8A;
+	transition: .5s;
+}
+
+.fpw:hover, .nacc:hover {
+	color: #fff;
+	text-shadow: 0 0 3px black;
+}
+.fpw {
+	left: -26%; 
+	bottom: 2%;
+}
+
+.nacc {
+	 right: -25%; 
+	 bottom: 6%;
 }
 
 .button {
@@ -128,7 +179,7 @@ body {
   background-color: #1063FB;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 5px #aaa;
+  box-shadow: 0 5px #887;
   	transition: .2s;
 }
 
@@ -136,7 +187,7 @@ body {
 
 .button:active {
   background-color: #387AF2;
-  box-shadow: 0 3px #999;
+  box-shadow: 0 3px #666;
   transform: translateY(2px);
 }
 
