@@ -268,6 +268,7 @@ body {
 
 .card-image {
 	background-color: rgba(159,216,242,0.3);
+	height: 135px;
 }
 
 .card-image img {
@@ -295,7 +296,9 @@ body {
 	position: relative;
 	top: 5px;
 }
-
+#footer span:hover {
+	text-decoration: underline;
+}
 .bulb:hover {
 	color: #E17AC8;
 }
