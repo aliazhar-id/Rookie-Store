@@ -31,7 +31,7 @@ body {
 	color: #387AF2;
 }
 
-.tologin {
+.toLogin {
 	min-width: 150px;
 	height: 25px;
 	background-color: #387AF2;
@@ -47,15 +47,182 @@ body {
 	transition: .5s;
 }
 
-.tologin:hover {
+.toLogin:hover {
 	background-color: #1142c0;
 	border: 2px solid #444;
 	color: #ffe;
 }
 /*End Navbar Style*/
 
-/*Start Form Style*/
+/*Form Start Style*/
+.form-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 100
+}
+.form-container {
+	display: none;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+}
 
+#login:target {
+	display: flex;
+}
+
+.form-brand {
+	position: absolute;
+	top: 40px;
+	color: #0ABCF7;
+	font-size: 230%;
+	text-shadow: 0px 0px 3px black;
+	font-family: 'Righteous', cursive;
+	height: 70px;
+	width: 300px;
+	text-align: center;
+	line-height: 70px;
+}
+
+.form-login {
+	background: linear-gradient(to bottom right,#eee, #999);
+	height: 500px;
+	width: 33.33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	vertical-align: middle;
+	border-radius: 50px;
+	box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.4);
+	position: absolute;
+	top: 50%;
+	z-index: 200;
+	transform: translateY(-50%);
+}
+
+.btnclose {
+	position: relative;
+	right: -55%;
+	top: -30%;
+	color: #eee;
+	text-shadow: 0 0 5px #333;
+
+}
+
+.btnclose .material-icons {
+	font-size: 50px;
+}
+
+@media only screen and (max-width: 650px) {
+	.btnclose {
+		position: relative;
+		right: -45%;
+		top: -21%;
+		color: #fff;
+	}
+
+	.btnclose .material-icons {
+		font-size: 50px;
+	}
+}
+
+.form-login input {
+	width: 85%;
+	font-size: 100%;
+	height: 50px;
+	outline: unset;
+	margin-bottom: 20px;
+	display: block;
+	border-radius: 15px;
+	padding: 3%;
+	border: 2px solid #47B5FB;
+	box-shadow: 3px 3px 5px #888;
+	transition: .5s;
+	font-family: 'Muli', sans-serif;
+	background-color: #95F7DF;
+}
+
+.form-login input:focus {
+		border: 2px solid #0BF3F0;
+		background-color: #0BCBFB;
+		box-shadow: 3px 3px 5px #666;
+}
+
+.form-login label {
+	font-weight: bold;
+	font-family: 'Muli', sans-serif;
+	position: relative;
+	margin-bottom: 5px;
+	left: -33%;
+}
+
+.form-login label[for="email"] {
+	margin-top: 125px;
+	left: -168px;
+}
+
+.form-opt {
+	margin-top: -15px;
+	width: 380px;
+	margin-bottom: 20px;
+}
+
+.fpw {
+	float: right;
+}
+
+.nacc {
+	float: left;
+}
+
+.fpw, .nacc {
+	text-decoration: none;
+	font-family: 'verdana',serif;
+	color: #066C8A;
+	transition: .5s;
+}
+
+.fpw:hover, .nacc:hover {
+	color: #fff;
+	text-shadow: 0 0 3px black;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #1063FB;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #887;
+  	transition: .2s;
+}
+
+.button:hover {background-color: #387AF2}
+
+.button:active {
+  background-color: #387AF2;
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
+}
+
+@media only screen and (max-width: 650px) {
+	.form-login {
+		width: 98%;
+		height: 500px;
+		transform: translateY(-10%);
+	}	
+}
 /*End Form Style*/
 
 /*Start Card Style*/
@@ -96,6 +263,8 @@ body {
 	box-shadow: 0px 0px 5px #bbb;
 	overflow: hidden;
 	transition: .25s;
+	background-color: rgba(159,216,242,0.3);
+	height: auto;
 }
 
 .card .card-desc {
@@ -123,11 +292,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.card-image {
-	background-color: rgba(159,216,242,0.3);
-	height: 135px;
 }
 
 .card-image img {
