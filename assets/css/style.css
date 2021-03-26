@@ -4,6 +4,7 @@ body {
 	margin: 0;
 	font-family: sans-serif;
 	height: auto;
+	width: 100%;
 }
 /*End General Style*/
 
@@ -97,32 +98,37 @@ body {
 	align-items: center;
 	flex-direction: column;
 	vertical-align: middle;
-	border-radius: 50px;
+	border-radius: 60px;
 	box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.4);
 	position: absolute;
 	top: 50%;
 	z-index: 200;
 	transform: translateY(-50%);
+	overflow: hidden;
 }
 
-.btnclose {
+.closebtn {
 	position: relative;
-	right: -55%;
-	top: -30%;
+	right: -50%;
+	top: -15%;
 	color: #eee;
 	text-shadow: 0 0 5px #333;
 
 }
 
-.btnclose .material-icons {
+.closebtn .material-icons {
 	font-size: 50px;
 }
 
 @media only screen and (max-width: 650px) {
-	.btnclose {
-		position: relative;
-		right: -45%;
-		top: -21%;
+	.form-login {
+		top: 25%;
+		z-index: 200;
+		transform: translateY(-25%);
+	}
+	.closebtn {
+		right: -40%;
+		top: -5%;
 		color: #fff;
 	}
 
@@ -158,12 +164,11 @@ body {
 	font-family: 'Muli', sans-serif;
 	position: relative;
 	margin-bottom: 5px;
-	left: -33%;
+	width: 85%;
 }
 
 .form-login label[for="email"] {
-	margin-top: 125px;
-	left: -168px;
+	margin-top: 90px;
 }
 
 .form-opt {
@@ -218,7 +223,7 @@ body {
 
 @media only screen and (max-width: 650px) {
 	.form-login {
-		width: 98%;
+		width: 100%;
 		height: 500px;
 		transform: translateY(-10%);
 	}	
