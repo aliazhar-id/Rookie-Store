@@ -86,7 +86,7 @@ body {
 	height: 70px;
 	width: 300px;
 	text-align: center;
-	line-height: 70px;
+	line-height: 70px; 
 }
 
 .form-login {
@@ -104,7 +104,6 @@ body {
 	top: 50%;
 	z-index: 200;
 	transform: translateY(-50%);
-	overflow: hidden;
 }
 
 .closebtn {
@@ -122,10 +121,11 @@ body {
 
 @media only screen and (max-width: 650px) {
 	.form-login {
+		width: 98%;
+		height: 500px;
+		transform: translateY(-10%);
 		top: 25%;
-		z-index: 200;
-		transform: translateY(-25%);
-	}
+	}	
 	.closebtn {
 		right: -40%;
 		top: -5%;
@@ -151,6 +151,7 @@ body {
 	transition: .5s;
 	font-family: 'Muli', sans-serif;
 	background-color: #95F7DF;
+	
 }
 
 .form-login input:focus {
@@ -165,6 +166,7 @@ body {
 	position: relative;
 	margin-bottom: 5px;
 	width: 85%;
+	
 }
 
 .form-login label[for="email"] {
@@ -173,16 +175,20 @@ body {
 
 .form-opt {
 	margin-top: -15px;
-	width: 380px;
+	width: 98%;
 	margin-bottom: 20px;
+	overflow-x: hidden;
+	
 }
 
 .fpw {
 	float: right;
+	
 }
 
 .nacc {
 	float: left;
+	
 }
 
 .fpw, .nacc {
@@ -221,13 +227,6 @@ body {
   transform: translateY(2px);
 }
 
-@media only screen and (max-width: 650px) {
-	.form-login {
-		width: 100%;
-		height: 500px;
-		transform: translateY(-10%);
-	}	
-}
 /*End Form Style*/
 
 /*Start Card Style*/
