@@ -323,10 +323,38 @@ body {
 	position: relative;
 	top: 5px;
 }
+
+#footer a {
+	text-decoration: none;
+}
+
 #footer span:hover {
 	text-decoration: underline;
 }
-.bulb:hover {
-	color: #E17AC8;
+.svg-icon {
+	height: 1.3em; 
+	width: 1.3em; 
+	position: relative;  
+	right: -5px;
+}
+
+.github-icon {
+	border-radius: 50%;
+	bottom: -5px;
+	fill: #ddd	
+}
+
+.github-icon:hover {
+	background: #222;
+	fill: #fff;
+}
+
+.discord-icon {
+	bottom: -7px;
+	fill: #ddd;
+}
+
+.discord-icon:hover {
+	fill: #aaa;
 }
 /*End Footer*/
