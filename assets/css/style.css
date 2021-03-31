@@ -2,7 +2,7 @@
 body {
 	background: #ddd;
 	margin: 0;
-	font-family: sans-serif, verdana;
+	font-family: "Nunito", Sans-serif;
 	height: auto;
 	width: 100%;
 }
@@ -302,7 +302,7 @@ body {
 
 /*Start Footer*/
 footer {
-	font-family: cursive, verdana, sans-serif;
+	font-family: "Nunito", sans-serif;
 	width: 100%;
 	background-color: #387AF2;
 	color: #ddd;
@@ -310,6 +310,7 @@ footer {
 	bottom: -300px;
 	padding: 30px;
 	box-shadow: 0 -2px 2px white;
+	font-weight: bold;
 }
 
 .copyright	{
@@ -358,5 +359,11 @@ footer {
 
 .discord-icon:hover {
 	fill: #aaa;
+}
+
+@media only screen and (max-width: 650px) {
+	footer {
+		padding: 15px;
+	}	
 }
 /*End Footer*/
