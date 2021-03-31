@@ -302,7 +302,7 @@ body {
 
 /*Start Footer*/
 footer {
-	font-family: "Nunito", sans-serif;
+	font-family: 'Nunito', sans-serif;
 	width: 100%;
 	background-color: #387AF2;
 	color: #ddd;
@@ -321,24 +321,40 @@ footer {
 	text-decoration: none;
 }
 
-.copyright span:hover {
+.copyright .arr:hover {
 	text-decoration: underline;
+}
+
+.contact ul li {
+	position: relative;
+	right: -5px;
+	list-style-type: none;
+	list-style: none;
 }
 
 .contact a {
 	text-decoration: none;
 	color: inherit;
+	transition: .5s;
 }
 
 .contact a:hover {
-	text-decoration: underline;
+	color: #bbb;
+}
+
+.copysign {
+	font-size: 27px;
+	position: relative;
+	top: 4px;
+	right: -3px;
+	font-weight: normal;
 }
 
 .svg-icon {
 	height: 1.3em; 
 	width: 1.3em; 
-	position: relative;  
-	right: -5px;
+	position: relative;
+	transition: .3s;
 }
 
 .github-icon {
@@ -354,11 +370,26 @@ footer {
 
 .discord-icon {
 	bottom: -7px;
+	left: -5px;
 	fill: #ddd;
 }
 
-.discord-icon:hover {
+.discord-icon:hover, .whatsapp-icon:hover, .email-icon:hover {
 	fill: #aaa;
+}
+
+.whatsapp-icon, .email-icon {
+	fill: #ddd;
+	position: relative;
+	left: -5px;
+	top: 4px;
+}
+
+.email-icon {
+	height: 1.6em; 
+	width: 1.6em;
+	left: -8px;
+	top: 8px;
 }
 
 @media only screen and (max-width: 650px) {
