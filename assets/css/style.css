@@ -30,6 +30,11 @@ body {
 .brand a {
 	text-align: center;
 	color: #387AF2;
+	text-decoration: none;
+}
+
+.brand span {
+	text-decoration: underline;
 }
 
 .toLogin {
@@ -230,7 +235,7 @@ body {
 /*End Form Style*/
 
 /*Start Card Style*/
-.container {
+.card-container {
 	position: relative;
 	top: 150px;
 	max-width: 950px;
@@ -247,48 +252,27 @@ body {
 .card {
 	width: 18%;
 	padding: 2%;
-	border-radius: 75px;
 	overflow: hidden;
 }
 
-.card:hover .card-image {
-	box-shadow: 0px 0px 6px #387AF2;
-	border-radius: 15px 15px 0 0 ;
+.card-sizer {
+	box-shadow: 2px 2px 7px -2px #222;
+	border-radius: 15px;
 	overflow: hidden;
+	transition: transform .3s ease-in-out, box-shadow .35s .15s;
 }
 
-.card:hover .card-desc {
-	box-shadow: 0px 4px 4px -2px #387AF2;
-	border-radius: 0 0 15px 15px;
-	overflow: hidden;	
+.card-sizer:hover {
+	box-shadow: 2px 2px 7px -2px #387AF2;
+	transform: scale(1.09);
 }
 
-.card .card-image {
-	box-shadow: 0px 0px 5px #bbb;
-	overflow: hidden;
-	transition: .25s;
+.card-sizer .card-image {
 	background-color: rgba(159,216,242,0.3);
 	height: auto;
 }
 
-.card .card-desc {
-	box-shadow: 0px 1px 5px #bbb;
-	overflow: hidden;	
-}
-
-@media only screen and (max-width: 650px) {
-	.card {
-		width: 33%;
-	}	
-}
-
-.card a {
-	text-decoration: none;
-	color: #387AF2;
-	font-weight: bold;
-}
-
-.card-desc {
+.card-sizer .card-desc {
 	background-color: #fff;
 	text-align: center;
 	font-size: 80%;
@@ -298,39 +282,57 @@ body {
 	align-items: center;
 }
 
-.card-image img {
+.card-sizer .card-image img {
 	width: 100%;
 	height: auto;
+}
+
+.card-sizer a {
+	text-decoration: none;
+	color: #387AF2;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 650px) {
+	.card {
+		width: 33%;
+	}	
 }
 /*End Card Style-*/
 
 /*Start Footer*/
-#footer {
+footer {
 	font-family: cursive;
 	width: 100%;
 	background-color: #387AF2;
-	height: 100px;
-	margin-top: 300px;
-	text-align: center;
-	line-height: 100px;
 	color: #ddd;
-	font-weight: bold;
-	box-shadow: 0 0 5px 1px #eee;
-}
-
-#footer .material-icons {
-	line-height: 0;
 	position: relative;
-	top: 5px;
+	bottom: -300px;
+	padding: 30px;
+	box-shadow: 0 -2px 2px white;
 }
 
-#footer a {
+.copyright	{
+	text-align: center;
+}
+
+.copyright a {
 	text-decoration: none;
 }
 
-#footer span:hover {
+.copyright span:hover {
 	text-decoration: underline;
 }
+
+.contact a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.contact a:hover {
+	text-decoration: underline;
+}
+
 .svg-icon {
 	height: 1.3em; 
 	width: 1.3em; 
