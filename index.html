@@ -13,12 +13,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
 </head>
-<body>
+<body oncontextmenu="return false;">
 	<!-- <div class="container"> -->
 	<!-- Start Navbar -->
 	<div class="navbar-container">
 		<div class="brand">
-			<a href=""><span>Rookie</span> <span>Store</span></a>
+			<a href="#login"><span>Rookie</span> <span>Store</span></a>
 		</div>
 		<div></div>
 		<div></div>
@@ -52,110 +52,114 @@
 	<div class="card-container">
 		<div class="card">
 			<div class="card-sizer">
-				<a href="game/free-fire.html">
-					<div class="card-image"><img src="assets/img/card/freefire.jpg" alt="Free Free"></div>
+				<a href="javascript:void(0)" onclick="notBuy()">
+					<div class="card-image"><img width="180px" height="180px" src="assets/img/card/freefire.jpg" alt="Free Free"></div>
 					<div class="card-desc">Free Fire</div>
 				</a>	
 			</div>	
 		</div>
 		<div class="card">
 			<div class="card-sizer">
-				<a href="">
-					<div class="card-image"><img src="assets/img/card/pubg.jpg" alt="PUBG"></div>
+				<a href="javascript:void(0)" onclick="notBuy()">
+					<div class="card-image"><img width="180px" height="180px" src="assets/img/card/pubg.jpg" alt="PUBG"></div>
 					<div class="card-desc">PUBG</div>
 				</a>
 			</div>
 		</div>
 		<div class="card">
 			<div class="card-sizer">
-				<a href="">
-					<div class="card-image"><img src="assets/img/card/mobilelegends.png" alt="Mobile Legends"></div>
+				<a href="javascript:void(0)" onclick="notBuy()">
+					<div class="card-image"><img width="180px" height="180px" src="assets/img/card/mobilelegends.png" alt="Mobile Legends"></div>
 					<div class="card-desc">Mobile Legends</div>
 				</a>
 			</div>
 		</div>
 		<div class="card">
 			<div class="card-sizer">
-				<a href="">
-					<div class="card-image"><img src="assets/img/card/cod.png" alt="Call Of Duty"></div>
+				<a href="javascript:void(0)" onclick="notBuy()">
+					<div class="card-image"><img width="180px" height="180px" src="assets/img/card/cod.png" alt="Call Of Duty"></div>
 					<div class="card-desc">Call Of Duty</div>
 				</a>
 			</div>
 		</div>
 		<div class="card">
 			<div class="card-sizer">
-				<a href="">
-					<div class="card-image"><img src="assets/img/card/pb.jpg" alt="Point Blank"></div>
+				<a href="javascript:void(0)" onclick="notBuy()">
+					<div class="card-image"><img width="180px" height="180px" src="assets/img/card/pb.jpg" alt="Point Blank"></div>
 					<div class="card-desc">Point Blank</div>
 				</a>
 			</div>
 		</div>
 		<div class="card">
 			<div class="card-sizer">
-				<a href="">
-					<div class="card-image"><img src="assets/img/card/minecraft.jpg" alt="Minecraft"></div>
+				<a href="javascript:void(0)" onclick="notBuy()">
+					<div class="card-image"><img width="180px" height="180px" src="assets/img/card/minecraft.jpg" alt="Minecraft"></div>
 					<div class="card-desc">Minecraft</div>
 				</a>
 			</div>
 		</div>
 		<div class="card">
 			<div class="card-sizer">
-				<a href="">
-					<div class="card-image"><img src="assets/img/card/spotify.jpg" alt="Spotify"></div>
+				<a href="javascript:void(0)" onclick="notBuy()">
+					<div class="card-image"><img width="180px" height="180px" src="assets/img/card/spotify.jpg" alt="Spotify Premium"></div>
 					<div class="card-desc">Spotify Premium</div>
 				</a>
 			</div>
 		</div>
 		<div class="card">
 			<div class="card-sizer">
-				<a href="">
-					<div class="card-image"><img src="assets/img/card/discord-nitro.jpg" alt=""></div>
+				<a href="javascript:void(0)" onclick="notBuy()">
+					<div class="card-image"><img width="180px" height="180px" src="assets/img/card/discord-nitro.jpg" alt="Discord Nitro"></div>
 					<div class="card-desc">Discord Nitro</div>
 				</a>
 			</div>
 		</div>
 		<div class="card">
 			<div class="card-sizer">
-				<a href="">
-					<div class="card-image"><img src="assets/img/card/discord-nitro-classic.jpg" alt=""></div>
+				<a href="javascript:void(0)" onclick="notBuy()">
+					<div class="card-image"><img width="180px" height="180px" src="assets/img/card/discord-nitro-classic.jpg" alt="Discord Nitro Classic"></div>
 					<div class="card-desc">Discord Nitro Classic</div>
 				</a>
 			</div>
 		</div>
-		<div class="card">
+<!-- 		<div class="card">
 			<div class="card-sizer">
-				<a href="">
-					<div class="card-image"><img src="assets/img/card/coming.png" alt="" width="150px" height="150px"></div>
+				<a href="javascript:void(0)" onclick="notBuy()">
+					<div class="card-image"><img width="180px" height="180px" src="assets/img/card/coming.png" alt="Coming Soon" width="150px" height="150px"></div>
 					<div class="card-desc">Coming Soon</div>
 				</a>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<!-- End Content-Card -->
 
 	<!-- Start Footer -->
 	<footer>
-		<div class="about">
-			<h1>Rookie Store</h1>
-			<p>Merupakan Start-Up Toko digital Di indonesia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt esse minima, quidem sequi asperiores?</p>
+		<div id="bg-wave"></div>
+		<div class="footer-content">
+			<div class="about">
+				<h1>Rookie Store</h1>
+				<p>Merupakan Start-Up Toko digital Di indonesia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt esse minima, quidem sequi asperiores?</p>
+			</div>
+			<hr>
+			<div class="contact">
+				<h3>Hubungi Kami!</h3>
+				<ul>
+					<li><a href="https://wa.me/6282254119188?text=Halo,%20Rookie%20Store!" target="_blank"><span id="whatsapp-svg"></span>+62 8225 4119 188</a></li>
+					<li><a href="mailto:aliazhar0555@gmail.com" target="_blank"><span id="email-svg"></span>rookiestore10@gmail.com</a></li>
+					<li><a href="https://discord.gg/48YjQ7Y" target="_blank"><span id="discord-svg"></span> Discord Support</a></li>
+				</ul>
+			</div>
+			<hr>
+			<div class="copyright"><span class="copysign">&copy</span> 2021 Rookie Store. <span class="arr">All Rights Reserved</span>.
+				<a href="https://github.com/aliazhar-id/" target="_blank" id="github-svg"></a>
+			</div>			
 		</div>
-		<hr>
-		<div class="contact">
-			<h3>Hubungi Kami</h3>
-			<ul>
-				<li><a href="https://wa.me/6282254119188?text=Halo,%20Rookie%20Store!" target="_blank"><span id="whatsapp-svg"></span>+62 8225 4119 188</a></li>
-				<li><a href="mailto:aliazhar0555@gmail.com" target="_blank"><span id="email-svg"></span>rookiestore10@gmail.com</a></li>
-				<li><a href="https://discord.gg/48YjQ7Y" target="_blank"><span id="discord-svg"></span> Discord Support</a></li>
-			</ul>
-		</div>
-	<hr>
-	<div class="copyright"><span class="copysign">&copy</span> 2021 Rookie Store. <span class="arr">All Rights Reserved</span>.
-		<a href="https://github.com/aliazhar-id/" target="_blank" id="github-svg"></a>
-	</div>		
 	</footer>
 	<!-- End Footer -->
 
 	<script src="assets/js/svg.js"></script>
+	<script src="assets/js/script.js"></script>
 
 </body>
 </html>

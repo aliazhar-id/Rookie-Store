@@ -1,4 +1,7 @@
 /*Start General Style*/
+* {
+	user-select: none;
+}
 body {
 	background: #ddd;
 	margin: 0;
@@ -117,7 +120,13 @@ body {
 	top: -15%;
 	color: #eee;
 	text-shadow: 0 0 5px #333;
+	transition: .3s
 
+}
+
+.closebtn:hover {
+	color: #387AF2;
+	text-shadow: 0 0 10px pink;
 }
 
 .closebtn .material-icons {
@@ -157,6 +166,11 @@ body {
 	font-family: 'Muli', sans-serif;
 	background-color: #95F7DF;
 	
+}
+
+.form-login input:hover {
+		border: 2px solid #079CC1;
+		box-shadow: 3px 3px 5px #666;
 }
 
 .form-login input:focus {
@@ -294,6 +308,10 @@ body {
 }
 
 @media only screen and (max-width: 650px) {
+	.card-container {
+		top: 80px;
+	}
+
 	.card {
 		width: 33%;
 	}	
@@ -304,13 +322,23 @@ body {
 footer {
 	font-family: 'Nunito', sans-serif;
 	width: 100%;
-	background-color: #387AF2;
 	color: #ddd;
 	position: relative;
-	bottom: -300px;
-	padding: 30px;
-	box-shadow: 0 -2px 2px white;
+	bottom: -130px;
 	font-weight: bold;
+}
+
+#bg-wave {
+	position: relative;
+	bottom: -42px;
+	z-index: -1;
+	fill: #387AF2;
+}
+
+.footer-content {
+	background-color: #387AF2;
+	padding: 0 30px 30px 30px;
+
 }
 
 .copyright	{
@@ -393,8 +421,11 @@ footer {
 }
 
 @media only screen and (max-width: 650px) {
-	footer {
-		padding: 15px;
+	.footer-content {
+		padding: 0 15px 15px 15px;
+	}
+	#bg-wave {
+		bottom: -32px;
 	}	
 }
 /*End Footer*/
