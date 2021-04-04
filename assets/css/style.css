@@ -28,12 +28,11 @@ body {
 .brand {
 	font-family: 'Righteous', cursive;
 	font-size: 38px;
+	color: #387AF2;
 }
 
-.brand a {
-	text-align: center;
-	color: #387AF2;
-	text-decoration: none;
+.brand:hover {
+	color: #1142c0;
 }
 
 .brand span {
@@ -73,15 +72,12 @@ body {
 	background-color: rgba(0,0,0,0.6);
 	z-index: 100
 }
+
 .form-container {
 	display: none;
 	justify-content: center;
 	justify-items: center;
 	align-items: center;
-}
-
-#login:target {
-	display: flex;
 }
 
 .form-brand {
@@ -211,7 +207,6 @@ body {
 }
 
 .fpw, .nacc {
-	text-decoration: none;
 	font-family: 'verdana',serif;
 	color: #066C8A;
 	transition: .5s;
@@ -228,7 +223,6 @@ body {
   font-size: 18px;
   cursor: pointer;
   text-align: center;
-  text-decoration: none;
   outline: none;
   color: #fff;
   background-color: #1063FB;

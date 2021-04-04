@@ -13,36 +13,34 @@
 	<link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
 </head>
-<body oncontextmenu="return false;">
+<body oncontextmenu="return false;" id="body">
 	<!-- <div class="container"> -->
 	<!-- Start Navbar -->
 	<div class="navbar-container">
-		<div class="brand">
-			<a href="#login"><span>Rookie</span> <span>Store</span></a>
-		</div>
+		<div class="brand" onclick="login(st=1)"><span>Rookie</span> <span>Store</span></div>
 		<div></div>
 		<div></div>
 		<div></div>
-		<a href="#login" class="toLogin">Daftar | Masuk</a>
+		<div onclick="login(st=1)" class="toLogin">Daftar | Masuk</div>
 	</div>
 	<!-- End Navbar -->
 
 	<!-- Start Form -->
 	<form action="">
 		<div class="form-container" id="login">
-			<div class="form-overlay"></div>
+			<div class="form-overlay" onclick="login()"></div>
 				<div class="form-login">
-					<a href="#" class="closebtn"><i class="material-icons">close</i></a>
+					<a href="javascript:void(0)" onclick="login()" class="closebtn"><i class="material-icons">close</i></a>
 					<div class="form-brand">LiShop Account</div>
 					<label for="email">Email</label>
 					<input type="email" maxlength="40" placeholder="Your Email e.g: aliazhar@gmail.com">
 					<label for="password">Password</label>
 					<input type="password" maxlength="40" placeholder="Your Password">
 						<div class="form-opt">
-							<a href="#" class="fpw">Forget password?</a>
-							<a href="#" class="nacc">Register new account</a>
+							<div class="fpw" onclick="login()">Forget password?</div>
+							<div class="nacc" onclick="login()">Register new account</div>
 						</div>
-					<a href="#"><button class="button" type="submit">Login</button></a>
+					<button class="button" type="reset">Login</button>
 				</div>
 		</div>
 	</form>
