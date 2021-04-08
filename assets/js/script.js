@@ -27,7 +27,7 @@ function login(st) {
 	}
 	else {
 		document.getElementById("login").style.display = "none";
-		document.getElementById("body").style.overflow = "auto";
+		document.body.style.overflow = "auto";
 	}
 }
 document.onkeydown = function(e) { 
