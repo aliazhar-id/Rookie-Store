@@ -2,12 +2,14 @@
 * {
 	user-select: none;
 }
+
 body {
 	background: #ddd;
 	margin: 0;
 	font-family: "Nunito", Sans-serif;
 	height: auto;
 	width: 100%;
+	scroll-behavior: smooth;
 }
 /*End General Style*/
 
@@ -243,6 +245,11 @@ body {
 /*End Form Style*/
 
 /*Start Card Style*/
+marquee {
+	color: #387AF2;
+	text-shadow: 0 0 1px 3px #000;
+	background-color: #eee;
+}
 .card-container {
 	position: relative;
 	top: 150px;
@@ -308,7 +315,11 @@ body {
 
 	.card {
 		width: 33%;
-	}	
+	}
+	.card-sizer {
+		transform: scale(1);
+	}
+	
 }
 /*End Card Style-*/
 
@@ -362,6 +373,7 @@ footer {
 
 .contact a:hover {
 	color: #bbb;
+	box-sizing: border-box;
 }
 
 .copysign {
@@ -377,17 +389,6 @@ footer {
 	width: 1.3em; 
 	position: relative;
 	transition: .3s;
-}
-
-.github-icon {
-	border-radius: 50%;
-	bottom: -5px;
-	fill: #ddd	
-}
-
-.github-icon:hover {
-	background: #222;
-	fill: #fff;
 }
 
 .discord-icon {
@@ -412,6 +413,11 @@ footer {
 	width: 1.6em;
 	left: -8px;
 	top: 8px;
+}
+
+.amail {
+	position: relative;
+	top: -2px;
 }
 
 @media only screen and (max-width: 650px) {
