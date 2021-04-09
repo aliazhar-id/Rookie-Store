@@ -47,7 +47,7 @@
 
 	<!-- Start Content-Card -->
 	<div class="card-container">
-		<marquee behavior="scroll" scrollamount="10" onclick="this.style.display = 'none'">Rookie Store Saat ini masih dalam tahap alpha, Jika anda ingin order/membeli bisa langsung menghubungi kontak yang tercantum di bagian paling bawah halaman ini.</marquee>
+		<marquee behavior="scroll" scrollamount="10" onclick="this.style.display = 'none'; scDown();">Rookie Store Saat ini masih dalam tahap alpha, Jika anda ingin order/membeli bisa langsung menghubungi kontak yang tercantum di bagian paling bawah halaman ini.</marquee>
 		<div class="card">
 			<div class="card-sizer">
 				<a href="javascript:void(0)" onclick="notBuy()">
@@ -141,7 +141,7 @@
 				</ul>
 			</div>
 			<hr>
-			<div class="copyright"><span class="copysign">&copy</span> 2021 Rookie Store. <span class="arr">All Rights Reserved</span>.</div>			
+			<div class="copyright"><span class="copysign tooltip">&copy<span class="tooltiptext">This website is open source, you can see the code directly from my personal github. <span id="github-svg" onclick="window.open('https:github.com/aliazhar-id', '_blank');"></span></span></span>2021 Rookie Store. <span class="arr">All Rights Reserved</span>.</div>			
 		</div>
 	</footer>
 	<!-- End Footer -->

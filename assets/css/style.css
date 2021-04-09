@@ -325,11 +325,10 @@ marquee {
 
 /*Start Footer*/
 footer {
+	margin-top: 130px;
 	font-family: 'Nunito', sans-serif;
 	width: 100%;
 	color: #ddd;
-	position: relative;
-	bottom: -130px;
 	font-weight: bold;
 }
 
@@ -382,6 +381,8 @@ footer {
 	top: 4px;
 	right: -3px;
 	font-weight: normal;
+	width: 40px;
+	display: inline-block;
 }
 
 .svg-icon {
@@ -397,7 +398,7 @@ footer {
 	fill: #ddd;
 }
 
-.discord-icon:hover, .whatsapp-icon:hover, .email-icon:hover {
+.discord-icon:hover, .whatsapp-icon:hover, .email-icon:hover, .github-icon:hover {
 	fill: #aaa;
 }
 
@@ -415,9 +416,54 @@ footer {
 	top: 8px;
 }
 
+.github-icon {
+	position: relative;
+	top: 4px;
+	fill: #222;
+}
+
 .amail {
 	position: relative;
 	top: -2px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #128852;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 5px;
+  position: absolute;
+  z-index: 1;
+  font-size: 18px;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  margin-left: -9px;
+  border-width: 9px;
+  border-style: solid;
+  border-color: #128852 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 650px) {
@@ -428,4 +474,4 @@ footer {
 		bottom: -32px;
 	}	
 }
-/*End Footer*/
+/*End Footer

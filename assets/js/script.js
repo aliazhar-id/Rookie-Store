@@ -1,5 +1,6 @@
 var docHeight = document.body.scrollHeight;
 function scSmooth(to, duration) {
+	if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) return;
     if (duration < 0) return;
     var scrollTop = document.body.scrollTop + document.documentElement.scrollTop;
     var difference = to - scrollTop;
@@ -37,4 +38,8 @@ document.onkeydown = function(e) {
 }
 function scDown() {
 	window.scSmooth(docHeight, 500);
+}
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
 }
