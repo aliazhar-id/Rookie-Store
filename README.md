@@ -1,6 +1,12 @@
 # Rookie Store
-Rookie Store pada awalnya bernama LiShop adalah Sebuah Website yang awalnya dibuat dengan tujuan pembelajaran dalam membangun website.<br> dengan seiring berjalannya waktu akhirnya dikembangkan menjadi sebuah website E-Commerce yang menjual item/barang didalam game,<br> atau yang bisa juga disebut <i>"Game Shop"</i> dan atau yang lebih sering disebut <i>"Top Up Game"</i> dll, Project ini di buat dan dikembangkan oleh aliazhar.
 
-Release in : [aliazhar.my.id](https://aliazhar.my.id)
+&nbsp; &nbsp; &nbsp; Rookie Store adalah salah satu Start Up Toko Online di indonesia yang berfokus kepada Toko Game/Top Up. <br>Dengan berbagai macam metode pembayaran yang tersedia, juga opsi tanpa kartu kredit, registrasi ataupun log-in. dan tentunya Murah, Aman, dan 100% Terpercaya.<br>
+&nbsp; &nbsp; &nbsp; Pada awalnya Rookie Store bernama LiShop yang bertujuan untuk pembelajaran dalam membangun website, Namun dengan seiring berjalannya waktu akhirnya dikembangkan menjadi sebuah website E-Commerce Game.<br> 
 
-Developement in : [shop.aliazhar.my.id](https://shop.aliazhar.my.id) and [dev.aliazhar.my.id](https://dev.aliazhar.my.id)
+### Project ini di buat dan dikembangkan oleh aliazhar.
+   
+   
+
+[Release in] : [aliazhar.my.id](https://aliazhar.my.id)
+
+[Developement in] : [shop.aliazhar.my.id](https://shop.aliazhar.my.id) and [dev.aliazhar.my.id](https://dev.aliazhar.my.id)
