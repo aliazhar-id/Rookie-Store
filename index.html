@@ -4,16 +4,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Rookie Store | Home</title>
+	<link rel="icon" href="assets/img/icon.png">
 	<link rel="stylesheet" href="assets/css/LiShop-Framework.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="icon" href="assets/img/icon.png">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900&amp;display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
 </head>
 <body oncontextmenu="return false;">
+	<div class="wrapper">
 	<!-- Start Navbar -->
 	<div class="navbar-container">
 		<div class="brand" onclick="scDown()"><span>Rookie</span> <span>Store</span></div>
@@ -29,7 +29,7 @@
 		<div class="form-container" id="login">
 			<div class="form-overlay" onclick="login()"></div>
 				<div class="form-login">
-					<a href="javascript:void(0)" onclick="login()" class="closebtn"><i class="material-icons">close</i></a>
+					<div class="closebtn floating" onclick="login()">×</div>
 					<div class="form-brand">Rookie Account</div>
 					<label for="email">Email</label>
 					<input type="email" maxlength="40" placeholder="Your Email e.g: aliazhar@gmail.com">
@@ -47,10 +47,10 @@
 
 	<!-- Start Content-Card -->
 	<div class="card-container">
-		<marquee behavior="scroll" scrollamount="10" onclick="this.style.display = 'none'; scDown();">Rookie Store Saat ini masih dalam tahap alpha, Jika anda ingin order/membeli bisa langsung menghubungi kontak yang tercantum di bagian paling bawah halaman ini.</marquee>
+		<marquee behavior="scroll" scrollamount="8" onclick="this.style.display = 'none'; scDown();">Rookie Store Saat ini masih dalam tahap alpha, Jika anda ingin order/membeli bisa langsung menghubungi kontak yang tercantum di bagian paling bawah halaman ini.</marquee>
 		<div class="card">
 			<div class="card-sizer">
-				<a href="javascript:void(0)" onclick="notBuy()">
+				<a href="javascript:void(0)" onclick="location.href = 'game/free-fire.html';">
 					<div class="card-image"><img width="180px" height="180px" src="assets/img/card/freefire.jpg" alt="Free Free"></div>
 					<div class="card-desc">Free Fire</div>
 				</a>	
@@ -127,24 +127,27 @@
 	<footer>
 		<div id="bg-wave"></div>
 		<div class="footer-content">
-			<div class="about">
-				<h1>Rookie Store</h1>
-				<p>Rookie Store adalah salah satu Start Up Toko Online di indonesia yang berfokus kepada Toko Game/Top Up. Dengan berbagai macam metode pembayaran yang tersedia,<br> juga opsi tanpa kartu kredit, registrasi ataupun log-in. dan tentunya Murah, Aman, dan 100% Terpercaya.</p>
+			<div class="footer-container">
+				<div class="about">
+					<h1>Rookie Store</h1>
+					<p>Rookie Store adalah salah satu Start Up Toko Online di indonesia yang berfokus kepada Toko Game/Top Up. Dengan berbagai macam metode pembayaran yang tersedia,<br> juga opsi tanpa kartu kredit, registrasi ataupun log-in. dan tentunya Murah, Aman, dan 100% Terpercaya.</p>
+				</div>
+				<hr>
+				<div class="contact">
+					<h3>Hubungi Kami!</h3>
+					<ul>
+						<li><a href="https://wa.me/6282254119188?text=Halo,%20Rookie%20Store!" target="_blank"><span id="whatsapp-svg"></span>+62 8225 4119 188</a></li>
+						<li><a href="mailto:aliazhar0555@gmail.com" target="_blank" class="amail"><span id="email-svg"></span>rookiestore10@gmail.com</a></li>
+						<li><a href="https://discord.gg/48YjQ7Y" target="_blank"><span id="discord-svg"></span> Discord Support</a></li>
+					</ul>
+				</div>
+				<hr>
+				<div class="copyright"><span class="copysign tooltip">&copy<span class="tooltiptext">This website is open source, you can see the code directly from my github account. <span id="github-svg" onclick="window.open('https:github.com/aliazhar-id', '_blank');"></span></span></span>2021 Rookie Store. <span class="arr">All Rights Reserved</span>.</div>			
 			</div>
-			<hr>
-			<div class="contact">
-				<h3>Hubungi Kami!</h3>
-				<ul>
-					<li><a href="https://wa.me/6282254119188?text=Halo,%20Rookie%20Store!" target="_blank"><span id="whatsapp-svg"></span>+62 8225 4119 188</a></li>
-					<li><a href="mailto:aliazhar0555@gmail.com" target="_blank" class="amail"><span id="email-svg"></span>rookiestore10@gmail.com</a></li>
-					<li><a href="https://discord.gg/48YjQ7Y" target="_blank"><span id="discord-svg"></span> Discord Support</a></li>
-				</ul>
-			</div>
-			<hr>
-			<div class="copyright"><span class="copysign tooltip">&copy<span class="tooltiptext">This website is open source, you can see the code directly from my personal github. <span id="github-svg" onclick="window.open('https:github.com/aliazhar-id', '_blank');"></span></span></span>2021 Rookie Store. <span class="arr">All Rights Reserved</span>.</div>			
 		</div>
 	</footer>
 	<!-- End Footer -->
+	</div>
 
 	<script src="assets/js/svg.js"></script>
 	<script src="assets/js/script.js"></script>

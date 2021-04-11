@@ -1,9 +1,22 @@
 /*Start General Style*/
+* {
+	user-select: none;
+}
+
 body {
 	background: #ddd;
 	margin: 0;
-	font-family: sans-serif;
+	font-family: "Nunito", Sans-serif;
 	height: auto;
+	width: 100%;
+	scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 /*End General Style*/
 
@@ -24,14 +37,18 @@ body {
 .brand {
 	font-family: 'Righteous', cursive;
 	font-size: 38px;
-}
-
-.brand a {
-	text-align: center;
 	color: #387AF2;
 }
 
-.login {
+.brand:hover {
+	color: #1142c0;
+}
+
+.brand span {
+	text-decoration: underline;
+}
+
+.toLogin {
 	min-width: 150px;
 	height: 25px;
 	background-color: #387AF2;
@@ -47,69 +64,164 @@ body {
 	transition: .5s;
 }
 
-.login:hover {
+.toLogin:hover {
 	background-color: #1142c0;
 	border: 2px solid #444;
 	color: #ffe;
 }
+/*End Navbar Style*/
 
-#login {
-	display: none;
+/*Form Start Style*/
+.form-overlay {
 	position: fixed;
-	width: 100%;
-	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	background-color: rgba(0,0,0,0.6);
+	z-index: 100
+}
+
+.form-container {
+	display: none;
 	justify-content: center;
 	justify-items: center;
 	align-items: center;
-	z-index: 200;
 }
 
-#login:target {
-	display: flex;
+.form-brand {
+	position: absolute;
+	top: 40px;
+	color: #0ABCF7;
+	font-size: 230%;
+	text-shadow: 0px 0px 3px black;
+	font-family: 'Righteous', cursive;
+	height: 70px;
+	width: 300px;
+	text-align: center;
+	line-height: 70px; 
 }
 
-.forum {
-	background-color: #eee;
-	height: 80%;
+.form-login {
+	background: linear-gradient(to bottom right,#eee, #999);
+	height: 500px;
+	width: 33.33%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	vertical-align: middle;
-	border-radius: 50px;
-	box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.2);
-	position: relative;
+	border-radius: 60px;
+	box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.4);
+	position: absolute;
+	top: 50%;
+	z-index: 200;
+	transform: translateY(-50%);
 }
 
-.forum input {
+.closebtn {
+	font-size: 65px;
+	font-family: verdana;
+	position: relative;
+	right: -50%;
+	top: -15%;
+	color: #eee;
+	text-shadow: 0 0 5px #333;
+	transition: .3s
+
+}
+
+.closebtn:hover {
+	color: #387AF2;
+	text-shadow: 0 0 10px pink;
+}
+
+@media only screen and (max-width: 650px) {
+	.form-login {
+		width: 98%;
+		height: 500px;
+		transform: translateY(-10%);
+		top: 25%;
+	}	
+	.closebtn {
+		right: -40%;
+		top: -5%;
+		color: #fff;
+	}
+
+	.btnclose .material-icons {
+		font-size: 50px;
+	}
+}
+
+.form-login input {
 	width: 85%;
 	font-size: 100%;
-	height: 40px;
+	height: 50px;
 	outline: unset;
 	margin-bottom: 20px;
 	display: block;
 	border-radius: 15px;
 	padding: 3%;
 	border: 2px solid #47B5FB;
-	box-shadow: 3px 3px 5px #aaa;
+	box-shadow: 3px 3px 5px #888;
+	transition: .5s;
+	font-family: 'Muli', sans-serif;
+	background-color: #95F7DF;
+	
+}
+
+.form-login input:hover {
+		border: 2px solid #079CC1;
+		box-shadow: 3px 3px 5px #666;
+}
+
+.form-login input:focus {
+		border: 2px solid #0BF3F0;
+		background-color: #0BCBFB;
+		box-shadow: 3px 3px 5px #666;
+}
+
+.form-login label {
+	font-weight: bold;
+	font-family: 'Muli', sans-serif;
+	position: relative;
+	margin-bottom: 5px;
+	width: 85%;
+	
+}
+
+.form-login label[for="email"] {
+	margin-top: 90px;
+}
+
+.form-opt {
+	margin-top: -15px;
+	width: 98%;
+	margin-bottom: 20px;
+	overflow-x: hidden;
+	
+}
+
+.fpw {
+	float: right;
+	
+}
+
+.nacc {
+	float: left;
+	
+}
+
+.fpw, .nacc {
+	font-family: 'verdana',serif;
+	color: #066C8A;
 	transition: .5s;
 }
 
-.forum input:focus {
-		border: 2px solid #0BF3F0;
-}
-
-.forum label {
-	font-weight: bold;
-}
-
-.forum-brand {
-	position: absolute;
-	top: 5%;
-	color: #0ABCF7;
-	text-shadow: 0px 0px 3px black;
-	font-family: 'Righteous', cursive;
+.fpw:hover, .nacc:hover {
+	color: #fff;
+	text-shadow: 0 0 3px black;
 }
 
 .button {
@@ -118,13 +230,12 @@ body {
   font-size: 18px;
   cursor: pointer;
   text-align: center;
-  text-decoration: none;
   outline: none;
   color: #fff;
   background-color: #1063FB;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 5px #aaa;
+  box-shadow: 0 5px #887;
   	transition: .2s;
 }
 
@@ -132,14 +243,222 @@ body {
 
 .button:active {
   background-color: #387AF2;
-  box-shadow: 0 3px #999;
+  box-shadow: 0 3px #666;
   transform: translateY(2px);
 }
 
+/*End Form Style*/
+
+/*Start Content Style*/
+.content-container {
+	position: relative;
+	top: 150px;
+	border: 1px solid red;
+	margin: auto;
+}
+
+.uid, .nominal, .paymethod {
+	background-color: #fffffe;
+	border-radius: 8px;
+	min-width: 900px;
+	height: auto;
+}
+
+.nominal {
+	margin-top: 5px;
+	padding: 5px;
+}
+
+.nominal::not(h2) {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+
+.nominal li {
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	background-color: #eee;
+	border: 2px solid #333;
+
+}
+/*End Content Style-*/
+
+/*Start Footer*/
+footer {
+	margin-top: 130px;
+	font-family: 'Nunito', sans-serif;
+	width: 100%;
+	color: #ddd;
+	font-weight: bold;
+	position: relative;
+}
+#bg-wave {
+	position: relative;
+	bottom: -42px;
+	z-index: -1;
+	fill: #387AF2;
+}
+
+.footer-container {
+	max-width: 1300px;
+	margin: auto;
+}
+
+.footer-content {
+	background-color: #387AF2;
+	padding: 0 30px 30px 30px;
+
+}
+
+.copyright	{
+	text-align: center;
+}
+
+.copyright a {
+	text-decoration: none;
+}
+
+.copyright .arr:hover {
+	text-decoration: underline;
+}
+
+.contact ul li {
+	position: relative;
+	right: -5px;
+	list-style-type: none;
+	list-style: none;
+}
+
+.contact a {
+	text-decoration: none;
+	color: inherit;
+	transition: .5s;
+}
+
+.contact a:hover {
+	color: #bbb;
+	box-sizing: border-box;
+}
+
+.copysign {
+	font-size: 27px;
+	position: relative;
+	top: 4px;
+	right: -3px;
+	font-weight: normal;
+	width: 40px;
+	display: inline-block;
+}
+
+.svg-icon {
+	height: 1.3em; 
+	width: 1.3em; 
+	position: relative;
+	transition: .3s;
+}
+
+.discord-icon {
+	bottom: -7px;
+	left: -5px;
+	fill: #ddd;
+}
+
+.discord-icon:hover, .whatsapp-icon:hover, .email-icon:hover, .github-icon:hover {
+	fill: #aaa;
+}
+
+.whatsapp-icon, .email-icon {
+	fill: #ddd;
+	position: relative;
+	left: -5px;
+	top: 4px;
+}
+
+.email-icon {
+	height: 1.6em; 
+	width: 1.6em;
+	left: -8px;
+	top: 8px;
+}
+
+.github-icon {
+	position: relative;
+	top: 4px;
+	fill: #222;
+}
+
+.amail {
+	position: relative;
+	top: -2px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #128852;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 5px;
+  position: absolute;
+  z-index: 1;
+  font-size: 18px;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  margin-left: -9px;
+  border-width: 9px;
+  border-style: solid;
+  border-color: #128852 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 @media only screen and (max-width: 650px) {
-	.forum {
-		width: 100%;
-		height: 90%;
+	.footer-content {
+		padding: 0 15px 15px 15px;
+	}
+	#bg-wave {
+		bottom: -32px;
 	}	
 }
-/*End Navbar Style*/
+/*End Footer*/
+
+/*Animation Framework*/
+.floating {  
+    animation-name: floating;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+/*Animation Keyframes*/  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}

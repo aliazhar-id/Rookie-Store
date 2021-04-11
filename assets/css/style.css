@@ -11,6 +11,13 @@ body {
 	width: 100%;
 	scroll-behavior: smooth;
 }
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between
+}
 /*End General Style*/
 
 /*Start Navbar Style*/
@@ -113,6 +120,8 @@ body {
 }
 
 .closebtn {
+	font-size: 65px;
+	font-family: verdana;
 	position: relative;
 	right: -50%;
 	top: -15%;
@@ -125,10 +134,6 @@ body {
 .closebtn:hover {
 	color: #387AF2;
 	text-shadow: 0 0 10px pink;
-}
-
-.closebtn .material-icons {
-	font-size: 50px;
 }
 
 @media only screen and (max-width: 650px) {
@@ -330,13 +335,18 @@ footer {
 	width: 100%;
 	color: #ddd;
 	font-weight: bold;
+	position: relative;
 }
-
 #bg-wave {
 	position: relative;
 	bottom: -42px;
 	z-index: -1;
 	fill: #387AF2;
+}
+
+.footer-container {
+	max-width: 1300px;
+	margin: auto;
 }
 
 .footer-content {
@@ -474,4 +484,21 @@ footer {
 		bottom: -32px;
 	}	
 }
-/*End Footer
+/*End Footer*/
+
+/*Animation Framework*/
+.floating {  
+    animation-name: floating;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+/*Animation Keyframes*/  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
