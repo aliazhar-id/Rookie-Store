@@ -21,13 +21,14 @@ function notBuy() {
 	} 
 }
 function login(st) {
+	var	x = document.getElementsByClassName("form-container");
 	if (st == 1) {
 		document.body.style.overflow = "hidden";
-		document.getElementById("login").style.display = "flex";
+		x[0].style.display = "flex";
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	}
 	else {
-		document.getElementById("login").style.display = "none";
+		x[0].style.display = "none";
 		document.body.style.overflow = "auto";
 	}
 }
