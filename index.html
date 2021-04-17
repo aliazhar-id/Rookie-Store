@@ -30,6 +30,7 @@
 				<div class="form-login">
 					<div class="closebtn floating" onclick="login()">×</div>
 					<div class="form-brand">Rookie Account</div>
+					<div id="getIP"></div>
 					<label for="email">Email</label>
 					<input type="email" maxlength="40" placeholder="Your Email e.g: aliazhar@gmail.com">
 					<label for="password">Password</label>
@@ -141,7 +142,7 @@
 					</ul>
 				</div>
 				<hr>
-				<div class="copyright"><span class="copysign tooltip">&copy<span class="tooltiptext">This website is open source, you can see the code directly from my github account. <span id="github-svg" onclick="parent.open('https:github.com/aliazhar-id');"></span></span></span>2021 Rookie Store. <span class="arr">All Rights Reserved</span>.</div>			
+				<div class="copyright"><span class="copysign tooltip">&copy<span class="tooltiptext">This website is open source, you can see the code directly from my github account. <a id="github-svg" href="https:github.com/aliazhar-id/" target="_blank"></a></span></span>2021 Rookie Store. <span class="arr">All Rights Reserved</span>.</div>			
 			</div>
 		</div>
 	</footer>
@@ -150,6 +151,12 @@
 
 	<script src="assets/js/svg.js"></script>
 	<script src="assets/js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>  
+        $.get("https://ipinfo.io", function(response) {
+            document.getElementById('getIP').innerHTML = "Your IP adress: " + response.ip;
+        }, "json")
+      </script>
 	<!-- Cloudflare Web Analytics -->
 	<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5696ca65259e487d927f9b78ba2841bf"}'></script>
 	<!-- End Cloudflare Web Analytics -->

@@ -224,7 +224,7 @@ body {
 	transition: .5s;
 }
 
-.fpw:hover, .nacc:hover {
+.fpw:hover, .nacc:hover, #getIP:hover {
 	color: #fff;
 	text-shadow: 0 0 3px black;
 }
@@ -250,6 +250,13 @@ body {
   background-color: #387AF2;
   box-shadow: 0 3px #666;
   transform: translateY(2px);
+}
+
+#getIP {
+	color: #239D9E;
+	font-size: 15px;
+	font-family: 'Nunito', sans-serif;
+	transition: .5s;
 }
 
 /*End Form Style*/
