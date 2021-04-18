@@ -44,3 +44,17 @@ function scDown() {
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
+document.onclick = () => applyCursorRippleEffect(event); 
+
+function applyCursorRippleEffect(e) {
+   const ripple = document.createElement("div");
+
+   ripple.className = "ripple";
+   document.body.appendChild(ripple);
+
+  ripple.style.left = `${e.clientX}px`;
+  ripple.style.top = `${e.clientY}px`; 
+
+   ripple.style.animation = "ripple-effect .6s  linear";
+   ripple.onanimationend = () => document.body.removeChild(ripple);
+}
