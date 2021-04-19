@@ -44,9 +44,10 @@ function scDown() {
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
-document.onclick = () => applyCursorRippleEffect(event); 
+document.onclick = () => rippleFX(event);
+window.oncontextmenu = () => rippleFX(event);
 
-function applyCursorRippleEffect(e) {
+function rippleFX(e) {
    const ripple = document.createElement("div");
 
    ripple.className = "ripple";

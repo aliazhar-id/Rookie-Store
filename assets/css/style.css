@@ -4,7 +4,7 @@
 }
 
 body {
-	background: #ddd;
+	background: rgb(243, 244, 245);
 	margin: 0;
 	font-family: "Nunito", Sans-serif;
 	height: auto;
@@ -12,7 +12,7 @@ body {
 	scroll-behavior: smooth;
 }
 
-.wrapper {
+.body-container {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -24,9 +24,11 @@ body {
 .navbar-container {
 	position: fixed;
 	width: 100%;
+	left: 0;
+	right: 0;
 	z-index: 100;
 	background-color: #fff;
-	box-shadow: 0 0.3px 5px blue;
+	box-shadow: 0 0.3px 5px #0099ff;
 	height: 50px;
 }
 
@@ -42,11 +44,12 @@ body {
 .brand {
 	font-family: 'Righteous', cursive;
 	font-size: 38px;
-	color: #387AF2;
+	color: #0099ff;
+	text-shadow: 0.5px 0.5px 2px #00000050;
 }
 
 .brand:hover {
-	color: #1142c0;
+	color: #387AF2;
 }
 
 .brand span {
@@ -54,24 +57,24 @@ body {
 }
 
 .login {
-	min-width: 150px;
-	height: 25px;
-	background-color: #387AF2;
+	min-width: 130px;
+	height: 35px;
+	background-color: #0099ff;
 	font-size: 16px;
 	border-radius: 15px;
 	text-align: center;
-	border: 2px solid black;
 	text-decoration: none;
-	line-height: 22px;
+	line-height: 35px;
 	font-family: sans-serif;
 	font-weight: bold;
 	color: #fff;
+	text-shadow: 0.5px 0.5px 2px #00000080;
+	font-family: 'Nunito', sans-serif;
 	transition: .5s;
 }
 
 .login:hover {
-	background-color: #1142c0;
-	border: 2px solid #444;
+	background-color: #387AF2;
 	color: #ffe;
 }
 /*End Navbar Style*/
@@ -137,7 +140,7 @@ body {
 }
 
 .closebtn:hover {
-	color: #387AF2;
+	color: #0099ff;
 	text-shadow: 0 0 10px pink;
 }
 
@@ -197,15 +200,14 @@ body {
 }
 
 .form-login label[for="email"] {
-	margin-top: 90px;
+	margin-top: 70px;
 }
 
 .form-opt {
 	margin-top: -15px;
 	width: 98%;
 	margin-bottom: 20px;
-	overflow-x: hidden;
-	
+	overflow-x: hidden;	
 }
 
 .fpw {
@@ -224,7 +226,7 @@ body {
 	transition: .5s;
 }
 
-.fpw:hover, .nacc:hover, #getIP:hover {
+.fpw:hover, .nacc:hover, #getIP:hover, #getAddr:hover {
 	color: #fff;
 	text-shadow: 0 0 3px black;
 }
@@ -244,15 +246,17 @@ body {
   	transition: .2s;
 }
 
-.button:hover {background-color: #387AF2}
+.button:hover {
+	background-color: #0099ff
+}
 
 .button:active {
-  background-color: #387AF2;
+  background-color: #0099ff;
   box-shadow: 0 3px #666;
   transform: translateY(2px);
 }
 
-#getIP {
+#getIP, #getAddr {
 	color: #239D9E;
 	font-size: 15px;
 	font-family: 'Nunito', sans-serif;
@@ -263,10 +267,18 @@ body {
 
 /*Start Card Style*/
 marquee {
-	color: #387AF2;
+	color: #0099ff;
 	text-shadow: 0 0 1px 3px #000;
 	background-color: #eee;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #66666660;
+	transition: box-shadow .3s;
 }
+
+marquee:hover {
+	box-shadow: 2px 2px 7px -2px #0099ff;
+}
+
 .card-container {
 	position: relative;
 	top: 150px;
@@ -288,20 +300,21 @@ marquee {
 }
 
 .card-sizer {
-	box-shadow: 2px 2px 7px -2px #222;
+	box-shadow: 2px 2px 7px -2px #22222270;
 	border-radius: 15px;
 	overflow: hidden;
 	transition: transform .3s ease-in-out, box-shadow .35s .15s;
 }
 
 .card-sizer:hover {
-	box-shadow: 2px 2px 7px -2px #387AF2;
-	transform: scale(1.09);
+	box-shadow: 2px 2px 7px -2px #0099ff;
+	transform: scale(1.06);
 }
 
 .card-sizer .card-image {
 	background-color: rgba(159,216,242,0.3);
 	height: auto;
+	overflow: hidden;
 }
 
 .card-sizer .card-desc {
@@ -317,10 +330,11 @@ marquee {
 .card-sizer .card-image img {
 	width: 100%;
 	height: auto;
+	transform: scaleY(1.06);
 }
 
 .card-sizer .card-content {
-	color: #387AF2;
+	color: #0099ff;
 	font-weight: bold;
 }
 
@@ -344,15 +358,16 @@ footer {
 	margin-top: 130px;
 	font-family: 'Nunito', sans-serif;
 	width: 100%;
-	color: #ddd;
+	color: #fff;
+	text-shadow: 0.5px 0.5px 2px #00000080;
 	font-weight: bold;
 	position: relative;
 }
 #bg-wave {
 	position: relative;
-	bottom: -42px;
+	width: 100%;
+	bottom: -28px;
 	z-index: -1;
-	fill: #387AF2;
 }
 
 .footer-container {
@@ -361,7 +376,7 @@ footer {
 }
 
 .footer-content {
-	background-color: #387AF2;
+	background-color: #0099ff;
 	padding: 0 30px 30px 30px;
 
 }
@@ -496,37 +511,3 @@ footer {
 	}	
 }
 /*End Footer*/
-
-/*Animation Framework*/
-.floating {  
-    animation-name: floating;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
-}
-
-.ripple {
-   width: 10px;
-   height: 10px;
-   background-color: transparent;
-   position: fixed;
-   border-radius: 50%;
-   border: 0.1px solid #ffffff59;
-   z-index: 9999;
-}
-
-/*Animation Keyframes*/  
-@keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }    
-}
-
-@keyframes ripple-effect {
-   to {
-      transform: scale(15);
-      opacity: 0.01;
-   }
-}
