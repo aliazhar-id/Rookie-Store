@@ -431,7 +431,7 @@ footer {
 .discord-icon {
 	bottom: -7px;
 	left: -5px;
-	fill: #ddd;
+	fill: #fff;
 }
 
 .discord-icon:hover, .whatsapp-icon:hover, .email-icon:hover, .github-icon:hover {
@@ -439,7 +439,7 @@ footer {
 }
 
 .whatsapp-icon, .email-icon {
-	fill: #ddd;
+	fill: #fff;
 	position: relative;
 	left: -5px;
 	top: 4px;
