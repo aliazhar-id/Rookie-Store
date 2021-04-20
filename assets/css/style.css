@@ -49,7 +49,7 @@ body {
 }
 
 .brand:hover {
-	color: #387AF2;
+	color: #0E81CE;
 }
 
 .brand span {
@@ -70,12 +70,12 @@ body {
 	color: #fff;
 	text-shadow: 0.5px 0.5px 2px #00000080;
 	font-family: 'Nunito', sans-serif;
-	transition: .5s;
+	transition: background-color .2s;
+	box-shadow: 1px 1px 3px #00000050;
 }
 
 .login:hover {
-	background-color: #387AF2;
-	color: #ffe;
+	background-color: #0E81CE;
 }
 /*End Navbar Style*/
 
@@ -381,16 +381,14 @@ footer {
 
 }
 
-.copyright	{
-	text-align: center;
+.about {
+	max-width: 800px;
+	float: left;
 }
 
-.copyright a {
-	text-decoration: none;
-}
-
-.copyright .arr:hover {
-	text-decoration: underline;
+.contact {
+	max-width: 600px;
+	float: left;
 }
 
 .contact ul li {
@@ -407,8 +405,20 @@ footer {
 }
 
 .contact a:hover {
-	color: #bbb;
+	color: #ddd;
 	box-sizing: border-box;
+}
+
+.copyright	{
+	text-align: center;
+}
+
+.copyright a {
+	text-decoration: none;
+}
+
+.copyright .arr:hover {
+	text-decoration: underline;
 }
 
 .copysign {
@@ -435,7 +445,7 @@ footer {
 }
 
 .discord-icon:hover, .whatsapp-icon:hover, .email-icon:hover, .github-icon:hover {
-	fill: #aaa;
+	fill: #ddd;
 }
 
 .whatsapp-icon, .email-icon {
@@ -483,6 +493,7 @@ footer {
   left: 50%;
   margin-left: -60px;
   opacity: 0;
+  box-shadow: 1px 1px 5px #00000080;
   transition: opacity 1s;
 }
 
@@ -502,12 +513,16 @@ footer {
   opacity: 1;
 }
 
+hr {
+	width: 80%;
+	height: 4px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
 @media only screen and (max-width: 650px) {
-	.footer-content {
-		padding: 0 15px 15px 15px;
-	}
 	#bg-wave {
 		bottom: -32px;
-	}	
+	}
 }
 /*End Footer*/
