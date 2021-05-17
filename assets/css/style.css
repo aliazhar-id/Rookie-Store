@@ -143,7 +143,7 @@ body {
 	transform: translateY(-50%);
 }
 
-.closebtn {
+.closeBtn {
 	font-size: 65px;
 	font-family: verdana;
 	position: relative;
