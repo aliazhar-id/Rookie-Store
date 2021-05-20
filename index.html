@@ -15,7 +15,6 @@
 	<body oncontextmenu="return false;">
 		<div id="bg-polygon"></div>
 		<div class="body-container">
-
 			<!-- Start Navbar -->
 			<div class="navbar-container">
 				<div class="navbar-content">
@@ -24,7 +23,6 @@
 				</div>
 			</div>
 			<!-- End Navbar -->
-
 			<!-- Start Form -->
 			<form action="">
 				<div class="form-container">
@@ -38,16 +36,15 @@
 						<input type="email" maxlength="40" placeholder="Your Email e.g: aliazhar@gmail.com">
 						<label for="password">Password</label>
 						<input type="password" maxlength="40" placeholder="Your Password">
-							<div class="form-opt">
-								<div class="fpw">Forgot password?</div>
-								<div class="nacc">Register new account</div>
-							</div>
-						<button class="button" type="reset">Login</button>
+						<div class="form-opt">
+							<div class="fpw">Forgot password?</div>
+							<div class="nacc">Register new account</div>
+						</div>
+						<button class="button" type="reset">Masuk</button>
 					</div>
 				</div>
 			</form>
 			<!-- End Form -->
-
 			<!-- Start Content-Card -->
 			<div class="card-container">
 				<marquee behavior="scroll" scrollamount="6">Rookie Store Saat ini masih dalam tahap alpha, Jika anda ingin order/membeli bisa langsung menghubungi kontak yang tercantum di bagian paling bawah halaman ini.</marquee>
@@ -56,8 +53,8 @@
 						<div class="card-content">
 							<div class="card-image"><img width="180px" height="180px" src="assets/img/card/freefire.jpg" alt="Free Free"></div>
 							<div class="card-desc">Free Fire</div>
-						</div>	
-					</div>	
+						</div>
+					</div>
 				</div>
 				<div class="card">
 					<div class="card-sizer">
@@ -133,7 +130,6 @@
 				</div>
 			</div>
 			<!-- End Content-Card -->
-
 			<!-- Start Footer -->
 			<footer>
 				<div id="bg-wave"></div>
@@ -141,7 +137,7 @@
 					<div class="footer-container">
 						<div class="about">
 							<h1>Rookie Store</h1>
-							<p>Rookie Store adalah salah satu Start Up Toko Online di indonesia yang berfokus kepada Toko Game/Top Up. Dengan berbagai macam metode pembayaran yang tersedia,<br> juga opsi tanpa kartu kredit, registrasi ataupun log-in. dan tentunya Murah, Aman, dan 100% Terpercaya.</p>
+							<p>Rookie Store adalah salah satu Start Up Toko Online di indonesia yang berfokus kepada Voucher Game. Dengan berbagai macam metode pembayaran yang tersedia,<br> juga opsi tanpa kartu kredit, registrasi ataupun log-in. dan tentunya Murah, Aman, dan 100% Terpercaya.</p>
 						</div>
 						<!-- <hr> -->
 						<div class="contact">
@@ -153,21 +149,20 @@
 							</ul>
 						</div>
 						<hr>
-						<div class="copyright"><span class="copysign tooltip">&copy<span class="tooltiptext">This website is open source, you can see the code directly from my github account. <span id="github-svg"></span></span></span>2021 Rookie Store. <span class="arr">All Rights Reserved</span>.</div>			
-					</div>			
+						<div class="copyright"><span class="copysign tooltip">&copy<span class="tooltiptext">This website is open source, you can see the code directly from my github account. <span id="github-svg"></span></span></span>2021 Rookie Store. <span class="arr">All Rights Reserved</span>.</div>
+					</div>
 				</div>
 			</footer>
 			<!-- End Footer -->
 		</div>
-
 		<script src="assets/js/svg.js"></script>
 		<script src="assets/js/script.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script>  
-	        $.get("https://ipinfo.io", function(response) {
-	            document.getElementById('getIP').innerHTML = "Your IP Adress: " + response.ip;
-	            document.getElementById('getAddr').innerHTML = "( " + response.city + ", " + response.region + " )";
-	        }, "json")
-	    </script>
+		<script>
+		$.get("https://ipinfo.io", function(response) {
+		document.getElementById('getIP').innerHTML = "Your IP Adress: " + response.ip;
+		document.getElementById('getAddr').innerHTML = "( " + response.city + ", " + response.region + " )";
+		}, "json")
+		</script>
 	</body>
 </html>

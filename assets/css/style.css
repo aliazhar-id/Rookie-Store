@@ -45,6 +45,8 @@ body {
 
 .navbar-content {
 	margin: auto;
+	padding-left: 5px;
+	padding-right: 5px; 
 	max-width: 1200px;
 	display: flex;
 	justify-content: space-between;
@@ -76,7 +78,7 @@ body {
 	border-radius: 15px;
 	text-align: center;
 	text-decoration: none;
-	line-height: 35px;
+	line-height: 36px;
 	font-weight: bold;
 	color: #fff;
 	text-shadow: 0.5px 0.5px 2px #00000080;
@@ -259,7 +261,10 @@ body {
   border: none;
   border-radius: 15px;
   box-shadow: 0 5px #887;
-  	transition: .2s;
+  text-shadow: 0.5px 0.5px 2px #00000080;
+  font-family: var(--Nunito);
+  font-weight: bold;
+  transition: .2s;
 }
 
 .button:hover {
@@ -402,9 +407,18 @@ footer {
 	float: left;
 }
 
+.about p {
+	text-indent: 15px;
+	transform: translateX(5px);
+}
+
 .contact {
 	max-width: 600px;
 	float: left;
+}
+
+.contact h2 {
+	transform: translateX(15px);
 }
 
 .contact ul li {
