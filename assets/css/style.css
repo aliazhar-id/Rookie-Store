@@ -90,6 +90,10 @@ body {
 .login:hover {
 	background-color: var(--blueHov);
 }
+
+.login-alt {
+	display: none;
+}
 /*End Navbar Style*/
 
 /*Form Start Style*/
@@ -160,24 +164,6 @@ body {
 .closebtn:hover {
 	color: var(--newBlue);
 	text-shadow: 0 0 10px pink;
-}
-
-@media only screen and (max-width: 650px) {
-	.form-login {
-		width: 98%;
-		height: 500px;
-		transform: translateY(-10%);
-		top: 25%;
-	}	
-	.closebtn {
-		right: -40%;
-		top: -5%;
-		color: #fff;
-	}
-
-	.btnclose .material-icons {
-		font-size: 50px;
-	}
 }
 
 .form-login input {
@@ -359,19 +345,6 @@ marquee:hover {
 	font-weight: bold;
 }
 
-@media only screen and (max-width: 650px) {
-	.card-container {
-		top: 80px;
-	}
-
-	.card {
-		width: 33%;
-	}
-	.card-sizer {
-		transform: scale(1);
-	}
-	
-}
 /*End Card Style-*/
 
 /*Start Footer*/
@@ -547,11 +520,5 @@ footer hr {
 	height: 4px;
 	background-color: #fff;
 	border-radius: 50%;
-}
-
-@media only screen and (max-width: 650px) {
-	#bg-wave {
-		bottom: -6px;
-	}
 }
 /*End Footer*/
