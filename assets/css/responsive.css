@@ -1,17 +1,18 @@
 @media only screen and (max-width: 1000px) {
 	.form-login {
 		width: 50%;
-		border: 1px solid blue
 	}
 }
 
 @media only screen and (max-width: 650px) {
+	#bg-polygon {
+		display: none
+	}
 	.form-login {
-		width: 98%;
+		width: 99%;
 		height: 500px;
 		transform: translateY(-10%);
 		top: 25%;
-		border: 1px solid red;
 	}	
 	.closeBtn {
 		right: -40%;
