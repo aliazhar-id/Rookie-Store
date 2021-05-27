@@ -48,14 +48,17 @@ function showFormLogin(x) {
 	var y = document.querySelector('.form-container');
 	if (x) {
 		y.style.display = "none";
-		document.body.style.overflow = "auto";
+		document.querySelector('.body-container').style.display = 'flex';
+		document.getElementById('bg-polygon').style.display = 'block';
 	} else {
-		document.body.style.overflow = "hidden";
+		document.querySelector('.body-container').style.display = 'none';
+		document.getElementById('bg-polygon').style.display = 'none';
 		y.style.display = "flex";
 		window.scrollTo({
 			top: 0,
 			behavior: 'smooth'
 		});
+		document.getElementsByTagName('form')[0].style.display = 'block';
 	}
 }
 

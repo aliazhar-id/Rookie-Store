@@ -5,16 +5,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Rookie Store | Home</title>
 		<link rel="icon" href="assets/img/icon.png">
-		<link rel="stylesheet" href="assets/css/aliframework.css">
+		<link rel="stylesheet" href="assets/css/animation.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="assets/css/responsive.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900&amp;display=swap" rel="stylesheet">
 	</head>
 	<body oncontextmenu="return false;">
 		<div id="bg-polygon"></div>
+		<!-- Start Form -->
+		<form action="">
+			<div class="form-container">
+				<div class="form-overlay"></div>
+				<div class="form-login">
+					<div class="closeBtn">×</div>
+					<div class="form-brand">Rookie Account</div>
+					<div id="getIP"></div>
+					<div id="getAddr"></div>
+					<label for="email">Email</label>
+					<input type="email" maxlength="40" placeholder="Your Email e.g: aliazhar@gmail.com">
+					<label for="password">Password</label>
+					<input type="password" maxlength="40" placeholder="Your Password">
+					<div class="form-opt">
+						<div class="fpw">Forgot password?</div>
+						<div class="nacc">Register new account</div>
+					</div>
+					<button class="button" type="reset">Masuk</button>
+				</div>
+			</div>
+		</form>
+		<!-- End Form -->
 		<div class="body-container">
 			<!-- Start Navbar -->
 			<div class="navbar-container">
@@ -25,28 +43,7 @@
 				</div>
 			</div>
 			<!-- End Navbar -->
-			<!-- Start Form -->
-			<form action="">
-				<div class="form-container">
-					<div class="form-overlay"></div>
-					<div class="form-login">
-						<div class="closeBtn">×</div>
-						<div class="form-brand">Rookie Account</div>
-						<div id="getIP"></div>
-						<div id="getAddr"></div>
-						<label for="email">Email</label>
-						<input type="email" maxlength="40" placeholder="Your Email e.g: aliazhar@gmail.com">
-						<label for="password">Password</label>
-						<input type="password" maxlength="40" placeholder="Your Password">
-						<div class="form-opt">
-							<div class="fpw">Forgot password?</div>
-							<div class="nacc">Register new account</div>
-						</div>
-						<button class="button" type="reset">Masuk</button>
-					</div>
-				</div>
-			</form>
-			<!-- End Form -->
+			
 			<!-- Start Content-Card -->
 			<div class="card-container">
 				<marquee behavior="scroll" scrollamount="6">Rookie Store Saat ini masih dalam tahap alpha, Jika anda ingin order/membeli bisa langsung menghubungi kontak yang tercantum di bagian paling bawah halaman ini.</marquee>

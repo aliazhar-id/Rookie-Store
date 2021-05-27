@@ -1,0 +1,31 @@
+.floating {  
+    animation-name: floating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+}
+
+.ripple {
+   width: 10px;
+   height: 10px;
+   background-color: transparent;
+   position: fixed;
+   border-radius: 50%;
+   border: 0.1px solid #ffffff;
+   z-index: 9999;
+}
+
+/*Animation Keyframes*/  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(-8px, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+@keyframes ripple-effect {
+   to {
+      transform: scale(15);
+      opacity: 0.01;
+   }
+}

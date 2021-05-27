@@ -1,9 +1,13 @@
+/*font import*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Righteous&family=Open+Sans:wght@300&display=swap');
+
 /*Start General Style*/
 :root {
 	/*font-family*/
-  --Nunito: 'Nunito', sans-serif;
+  --Nunito: 'Nunito', sans-serif, cursive;
   --Rightos: 'Righteous', cursive, sans-serif;
-  --Muli: 'Muli', sans-serif;
+  --OpenSans: 'Open Sans', sans-serif, cursive;
+
     /*color*/
   --bgColor: #F2F4F5;  
   --newBlue: #0099ff;
@@ -11,6 +15,7 @@
 }
 
 * {
+	box-sizing: border-box;
 	user-select: none;
 }
 
@@ -21,13 +26,24 @@ body {
 	height: auto;
 	width: 100%;
 	scroll-behavior: smooth;
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar { 
+  display: none;   /*Safari and Chrome*/
+}
+
+#bg-polygon {
+	/*display: none;*/
 }
 
 .body-container {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  justify-content: space-between`
+  justify-content: space-between;
+  /*display: none;*/
 }
 /*End General Style*/
 
@@ -125,11 +141,6 @@ body {
 	width: 300px;
 	text-align: center;
 	line-height: 70px;
-	transition: 1s ease-out; 
-}
-
-.form-brand:hover {
-	transform: rotateX(360deg);
 }
 
 .form-login {
@@ -168,8 +179,8 @@ body {
 
 .form-login input {
 	width: 85%;
-	font-size: 100%;
-	height: 50px;
+	font-size: 18px;
+	height: 48px;
 	outline: unset;
 	margin-bottom: 20px;
 	display: block;
@@ -178,7 +189,9 @@ body {
 	border: 2px solid #47B5FB;
 	box-shadow: 3px 3px 5px #888;
 	transition: .5s;
-	font-family: var(--Muli);
+	font-family: var(--OpenSans);
+	font-weight: bold;
+	color: #333;
 	background-color: #95F7DF;
 	
 }
@@ -196,7 +209,7 @@ body {
 
 .form-login label {
 	font-weight: bold;
-	font-family: var(--Muli);
+	font-family: var(--OpenSans);
 	position: relative;
 	margin-bottom: 5px;
 	width: 85%;
@@ -225,7 +238,7 @@ body {
 }
 
 .fpw, .nacc {
-	font-family: 'verdana',serif;
+	font-family: 'verdana', sans-serif;
 	color: #066C8A;
 	transition: .5s;
 }
@@ -266,6 +279,7 @@ body {
 #getIP, #getAddr {
 	color: #239D9E;
 	font-size: 15px;
+	font-weight: bold;
 	font-family: var(--Nunito);
 	transition: .5s;
 }

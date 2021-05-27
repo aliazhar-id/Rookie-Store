@@ -11,8 +11,6 @@
 	.form-login {
 		width: 99%;
 		height: 500px;
-		transform: translateY(-10%);
-		top: 25%;
 	}	
 	.closeBtn {
 		right: -40%;
