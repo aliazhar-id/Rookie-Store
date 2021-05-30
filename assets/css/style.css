@@ -34,16 +34,11 @@ body::-webkit-scrollbar {
   display: none;   /*Safari and Chrome*/
 }
 
-#bg-polygon {
-	/*display: none;*/
-}
-
 .body-container {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
-  /*display: none;*/
 }
 /*End General Style*/
 
