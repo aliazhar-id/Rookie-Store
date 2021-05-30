@@ -28,6 +28,7 @@ body {
 	scroll-behavior: smooth;
 	-ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
+  position: relative;
 }
 
 body::-webkit-scrollbar { 
@@ -39,6 +40,13 @@ body::-webkit-scrollbar {
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#particles-js {
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
 }
 /*End General Style*/
 
