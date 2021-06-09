@@ -1,5 +1,5 @@
 /* ------------------------------------------ */
-/*          		Generic Styles	    		      */
+/*                Generic Styles              */
 /* ------------------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Righteous&family=Open+Sans:wght@300&display=swap');
 :root {
@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
 
 
 /* ------------------------------------------ */
-/*        			Header Styles		        		  */
+/*                Header Styles               */
 /* ------------------------------------------ */
 header {
 	position: fixed;
@@ -88,7 +88,7 @@ header .header-signin-button:hover {
 }
 
 /* ------------------------------------------ */
-/* 								Main Styles								  */
+/*                 Main Styles                */
 /* ------------------------------------------ */
 marquee {
 	color: var(--newBlue);
@@ -119,6 +119,7 @@ main {
 	font-weight: bold;
 	color: var(--newBlue);
 	z-index: 2;
+	margin-bottom: 50px;
 }
 
 main .card {
@@ -157,7 +158,7 @@ main .card-title {
 
 
 /* ------------------------------------------ */
-/* 								Footer Styles							  */
+/*               Footer Styles                */
 /* ------------------------------------------ */
 footer {
 	font-family: var(--Nunito);
@@ -182,9 +183,10 @@ footer .footer-container {
 	top: 3px;
 }
 
-footer a {
+footer li a {
 	text-decoration: none;
 	color: inherit;
+	transition: .5s;
 }
 
 footer .about {
@@ -199,7 +201,6 @@ footer .about h1 {
 }
 
 footer .about p {
-	text-indent: 10px;
 	line-height: 25px;
 }
 
@@ -219,6 +220,19 @@ footer .contact ul {
 	padding-left: 20px;
 }
 
+footer .contact .svg-icon {
+	fill: #fff;
+	transition: .5s;
+}
+
+footer .svg-icon:hover {
+	fill: #999;
+}
+
+footer li a:hover {
+	color: #999;
+}
+
 footer .copyright {
 	width: 100%;
 	text-align: center;
@@ -234,6 +248,7 @@ footer .copysign {
 	font-size: 27px;
 	position: relative;
 	top: 4px;
+	cursor: pointer;
 }
 
 footer hr {
@@ -244,7 +259,6 @@ footer hr {
 }
 
 footer .copysign .tooltips{
-	visibility: hidden;
 	position: absolute;
   width: 300px;
   background-color: #128852;
@@ -254,7 +268,8 @@ footer .copysign .tooltips{
   bottom: 100%;
   left: -216%;
   opacity: 0;
-  transition: opacity 1s;
+  transition: all 1s;
+  visibility: hidden;
 }
 
 footer .copysign:hover .tooltips {
