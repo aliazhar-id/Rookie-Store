@@ -1,5 +1,5 @@
 /* ------------------------------------------ */
-/* 				Generic Styles			      */
+/*          		Generic Styles	    		      */
 /* ------------------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Righteous&family=Open+Sans:wght@300&display=swap');
 :root {
@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
 
 
 /* ------------------------------------------ */
-/* 				Header Styles				  */
+/*        			Header Styles		        		  */
 /* ------------------------------------------ */
 header {
 	position: fixed;
@@ -88,7 +88,7 @@ header .header-signin-button:hover {
 }
 
 /* ------------------------------------------ */
-/* 				Main Styles					  */
+/* 								Main Styles								  */
 /* ------------------------------------------ */
 marquee {
 	color: var(--newBlue);
@@ -157,7 +157,7 @@ main .card-title {
 
 
 /* ------------------------------------------ */
-/* 				Footer Styles				  */
+/* 								Footer Styles							  */
 /* ------------------------------------------ */
 footer {
 	font-family: var(--Nunito);
