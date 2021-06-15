@@ -15,6 +15,7 @@ footer .about {
 @media only screen and (max-width: 650px) {
 header .header-container {
 	width: 100%;
+	padding: 0 5px 0 5px;
 }
 
 main .card {
@@ -35,3 +36,11 @@ footer .contact h2 {
 }
 }
 
+@media only screen and (max-width: 421px) {
+	header .header-signin-button {
+		display: none
+	}
+	header .hamburger {
+		display: flex;
+	}
+}

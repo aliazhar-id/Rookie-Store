@@ -60,11 +60,15 @@ header .header-logo {
 	color: var(--newBlue);
 	text-shadow: 0.5px 0.5px 2px #00000050;
 	transition: .35s;
-	padding-left: 20px;
+	/*padding-left: 20px;*/
 }
 
 header .header-logo:hover {
 	color: var(--blueHov);
+}
+
+header span {
+	text-decoration: underline;
 }
 
 header .header-signin-button {
@@ -86,6 +90,24 @@ header .header-signin-button {
 header .header-signin-button:hover {
 	background-color: var(--blueHov);
 }
+
+header .hamburger {
+	display: none;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 5px;
+}
+header .hamburger span {
+	background-color: var(--newBlue);
+	width: 90%;
+	height: 5px;
+	border-radius: 15px;
+}
+
 
 /* ------------------------------------------ */
 /*                 Main Styles                */
@@ -227,6 +249,10 @@ footer .contact .svg-icon {
 
 footer .svg-icon:hover {
 	fill: #999;
+}
+
+footer li {
+	line-height: 25px;
 }
 
 footer li a:hover {
