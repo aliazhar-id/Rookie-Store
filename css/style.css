@@ -14,7 +14,7 @@
   --blueHov: #0E81CE;
 }
 
-/* particlesJS tag */
+/* particlesJS effect */
 #particles-js {
 	position: fixed;
 	bottom: 0;
@@ -60,7 +60,6 @@ header .header-logo {
 	color: var(--newBlue);
 	text-shadow: 0.5px 0.5px 2px #00000050;
 	transition: .35s;
-	/*padding-left: 20px;*/
 }
 
 header .header-logo:hover {
