@@ -36,11 +36,24 @@ footer .contact h2 {
 }
 }
 
+@media only screen and (max-width: 449px) {
+	form {
+		width: 100%;
+		padding: 5px;
+	}
+}
+
 @media only screen and (max-width: 421px) {
 	header .header-signin-button {
 		display: none
 	}
 	header .hamburger {
 		display: flex;
+	}
+}
+
+@media only screen and (max-height: 499px) {
+	form {
+		height: 100%
 	}
 }

@@ -7,3 +7,25 @@
 window.onbeforeunload = () => {
 	window.scrollTo(0, 0);
 }
+
+function showForm() {
+	document.body.style.overflow = 'hidden';
+	form.style.display = 'block';
+	overlay.style.display = 'flex';
+}
+
+function hideForm() {
+	document.body.style.overflow = 'auto';
+	form.style.display = 'none';
+	overlay.style.display = 'none';
+}
+
+const form = document.querySelector('form'),
+overlay = document.querySelector('.overlay'),
+signinButton = document.querySelector('.header-signin-button'),
+hamburger = document.querySelector('.hamburger');
+
+
+signinButton.onclick = showForm;
+hamburger.onclick = showForm;
+overlay.onclick = hideForm;
