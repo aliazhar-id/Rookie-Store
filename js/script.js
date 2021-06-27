@@ -11,21 +11,37 @@ window.onbeforeunload = () => {
 function showForm() {
 	document.body.style.overflow = 'hidden';
 	form.style.display = 'block';
+	setTimeout(() => {
+		form.style.opacity = '0.3';
+	}, 80);
+	setTimeout(() => {
+		form.style.opacity = '0.5';
+	}, 150);
+	setTimeout(() => {
+		form.style.opacity = '1';
+	}, 300);
 	overlay.style.display = 'flex';
 }
 
 function hideForm() {
 	document.body.style.overflow = 'auto';
-	form.style.display = 'none';
-	overlay.style.display = 'none';
+	setTimeout(() => {
+		form.style.opacity = '0.3';
+	}, 150);
+	form.style.opacity = '0.5';
+	setTimeout(() => {
+		form.style.display = 'none';
+		overlay.style.display = 'none';
+	}, 300);
 }
 
 const form = document.querySelector('form'),
 overlay = document.querySelector('.overlay'),
+btnCloseForm = document.querySelector('.btncloseform'),
 signinButton = document.querySelector('.header-signin-button'),
 hamburger = document.querySelector('.hamburger');
-
 
 signinButton.onclick = showForm;
 hamburger.onclick = showForm;
 overlay.onclick = hideForm;
+btnCloseForm.onclick = hideForm;

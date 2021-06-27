@@ -118,21 +118,42 @@ form {
 	border-radius: 20px;
 	z-index: 5;
 	display: none;
-	background-color: salmon;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding: 15px;
 	overflow-y: auto;
+	font-family: var(--Rightos);
+	box-shadow: 3px 3px  8px 2.5px #555;
 }
 
 form .form-container {
 	width: 100%;
-	height: 470px;
+	height: 500px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	flex-direction: column;
+	background-image: linear-gradient(135deg, var(--newBlue) 50%, var(--bgColor) 50%);
+}
+
+form section:first-child {
+	color: #fff;
+	font-size: 30px;
+}
+
+form section:nth-child(2) {
+	position: absolute;
+	font-size: 50px;
+	right: 30px;
+	top: 15px;
+	font-family: var(--Nunito);
+	font-weight: bold;
+	color: #eee;
+	text-shadow: 1px 1px 2px #888;
+}
+
+form section:nth-child(2):hover {
+	color: #ccc;
 }
 
 form section:last-child {
@@ -157,6 +178,21 @@ form input {
 	margin-bottom: 20px;
 }
 
+form button {
+	margin-top: 20px;
+	width: 120px;
+	height: 40px;
+	background-color: var(--newBlue);
+	border-radius: 20px;
+	border: none;
+	color: var(--bgColor);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+form button:hover {
+	background-color: var(--blueHov);
+}
 
 .overlay {
 	position: fixed;
@@ -165,7 +201,7 @@ form input {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: #88888880;
+	background-color: #11111195;
 	z-index: 4;
 }	
 
