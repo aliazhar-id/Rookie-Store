@@ -4,10 +4,12 @@
 // 	}
 // }
 
+//when the browser is refreshed scroll the window to the top of the page
 window.onbeforeunload = () => {
 	window.scrollTo(0, 0);
 }
 
+//function to show form element
 function showForm() {
 	document.body.style.overflow = 'hidden';
 	form.style.display = 'block';
@@ -23,6 +25,7 @@ function showForm() {
 	overlay.style.display = 'flex';
 }
 
+// function to hide form element
 function hideForm() {
 	document.body.style.overflow = 'auto';
 	setTimeout(() => {
