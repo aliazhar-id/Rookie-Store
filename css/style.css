@@ -74,17 +74,48 @@ body::-webkit-scrollbar, form::-webkit-scrollbar {
 }
 
 .modal-header {
-  padding: 2px 16px;
+  padding: 2px 0;
   background-color: var(--newBlue);
   color: white;
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: var(--Rightos);
+  font-size: 35px;
+  text-shadow: 1px 2px 3px #555;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+	padding: 2px 16px;
+	color: #333;
+	text-shadow: 1px 2px 3px #55555550;
+}
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: var(--newBlue);
   color: white;
+}
+
+.modal-footer #modal-close-btn, 
+.modal-footer #modal-ok-btn {
+	margin: 0 30px;
+	background-color: var(--newBlue);
+	width: 20%;
+	height: 30px;
+	border-radius: 10px;
+	border: none;
+	color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	text-shadow: 1px 2px 3px #55555580;
+	font-weight: bold;
+	transition: .3s;
+}
+
+.modal-footer #modal-close-btn:hover, 
+.modal-footer #modal-ok-btn:hover {
+	background-color: var(--blueHov);
 }
 
 
