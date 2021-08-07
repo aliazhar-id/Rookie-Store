@@ -1,68 +1,73 @@
+//Disable some keyboard shortcut actions.
 document.onkeydown = (e) => {
 	if ((e.keyCode == 123) || (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) || (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) || (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) || (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0))) {
-		return false;
+		return;
 	}
 }
 
-//when the browser is refreshed scroll the window to the top of the page
+// When the browser is refreshed scroll the window to the top of the page
 window.onbeforeunload = () => {
 	window.scrollTo(0, 0);
 }
 
-//function to show form element
+const form = document.querySelector('form'),
+	overlay = document.querySelector('.overlay');
+
+// Function to show form element
 function showForm() {
 	document.body.style.overflow = 'hidden';
 	form.style.display = 'block';
 	setTimeout(() => {
 		form.style.opacity = '0.3';
 	}, 80);
+
 	setTimeout(() => {
 		form.style.opacity = '0.5';
 	}, 150);
+
 	setTimeout(() => {
 		form.style.opacity = '1';
 	}, 300);
 	overlay.style.display = 'flex';
 }
 
-// function to hide form element
+// Function to hide form element
 function hideForm() {
 	document.body.style.overflow = 'auto';
+	form.style.opacity = '0.5';
 	setTimeout(() => {
 		form.style.opacity = '0.3';
 	}, 150);
-	form.style.opacity = '0.5';
+
 	setTimeout(() => {
 		form.style.display = 'none';
 		overlay.style.display = 'none';
 	}, 300);
 }
 
-const form = document.querySelector('form'),
-	overlay = document.querySelector('.overlay'),
-	btnCloseForm = document.querySelector('.btncloseform'),
-	signinButton = document.querySelector('.header-signin-button'),
-	hamburger = document.querySelector('.hamburger');
+// To show and hide form put the class, id, or tag name into array below, which mean index 0 to show Form; and index 1 to hide form, when got clicked;
+const formEvents = [['.header-signin-button', '.hamburger'], ['.btncloseform', '.overlay']];
+formEvents.forEach((x, i) => {
+	x.forEach(x => {
+		document.querySelector(x).onclick = (i === 0) ? showForm : hideForm;
+	});
+});
 
-signinButton.onclick = showForm;
-hamburger.onclick = showForm;
-overlay.onclick = hideForm;
-btnCloseForm.onclick = hideForm;
 
-// hide marquee on onclick
+// Hide marquee on onclick
 const marquee = document.querySelector('marquee');
 marquee.addEventListener('click', function () {
 	this.style.display = 'none';
 	scrollToDown();
 });
 
-// scroll to bottom when headerLogo got clicked
+// Scroll to bottom when headerLogo got clicked
 const headerLogo = document.querySelector('.header-logo');
 headerLogo.onclick = scrollToDown;
 
 // scrollToDown
 function scrollToDown() {
-	let t = document.body.scrollHeight,
+	const t = document.body.scrollHeight,
 		d = 500;
 	if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) return;
 	if (d < 0) return;
@@ -80,19 +85,23 @@ function scrollToDown() {
 }
 
 // Modal
-var modal = document.querySelector('.modal');
+const modal = document.querySelector('.modal');
 const modalCloseBtn = document.getElementById('modal-close-btn');
 const modalOkBtn = document.getElementById('modal-ok-btn');
 
-const card = document.querySelectorAll('.card');
-card.forEach((x) => {
-	x.addEventListener('click', () => {
-		modal.style.display = "block";
-		document.body.style.overflow = 'hidden';
-	});
-});
+const main = document.querySelector('main');
+main.addEventListener('click', e => {
+	try {
+		if (e.target.offsetParent.parentNode.className === 'card') {
+			modal.style.display = "block";
+			document.body.style.overflow = 'hidden';
+		}
+	} catch {
+		return;
+	}
+})
 
-// function to hide modal
+// Function to hide modal
 function hideModal() {
 	modal.style.display = "none";
 	document.body.style.overflow = 'auto';
@@ -103,10 +112,4 @@ modalCloseBtn.onclick = hideModal;
 modalOkBtn.onclick = () => {
 	hideModal();
 	scrollToDown();
-}
-
-window.onclick = event => {
-	if (event.target == modal) {
-		hideModal();
-	}
 }
