@@ -356,8 +356,9 @@ main img {
 
 main .card-title {
 	background-color: #fff;
+	font-size: 100%;
 	height: 30px;
-	line-height: 25px;
+	line-height: 30px;
 	z-index: 2;
 }
 

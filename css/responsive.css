@@ -56,3 +56,15 @@ footer .contact h2 {
 		height: 100%
 	}
 }
+
+@media only screen and (max-width:  425px) {
+	main .card-title {
+		font-size: 83%;
+	}
+}
+
+@media only screen and (max-width:  320px) {
+	main .card-title {
+		font-size: 70%;
+	}
+}
