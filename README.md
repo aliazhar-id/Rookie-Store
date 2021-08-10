@@ -34,4 +34,4 @@ mencatumkan credit ke repository ini, Thank You
    
 ### Support
 
-###### Kami menerima bantuan pengembangan project melalui [Saweria](https://shop.aliazhar.my.id) Jika anda tertarik.
+###### Kami menerima bantuan pengembangan project melalui [Saweria](https://saweria.co/aliazhar) Jika anda tertarik.

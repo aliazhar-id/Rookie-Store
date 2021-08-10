@@ -1,0 +1,45 @@
+.floating {  
+    animation-name: floating;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+}
+
+.ripple {
+   width: 8px;
+   height: 8px;
+   background-color: transparent;
+   position: fixed;
+   border-radius: 50%;
+   border: 0.1px solid #ffffff;
+   z-index: 10;
+}
+
+/*Animation Keyframes*/  
+@keyframes floating {
+    0% {transform: translate(0, 0);}
+    50% {transform: translate(-8px, 15px);}
+    100% {transform: translate(0, 0);}    
+}
+
+@keyframes ripple-effect {
+   to {
+      transform: scale(12);
+      opacity: 0.01;
+   }
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes showFormOpacity {
+  from {opacity: 0; transform: translate(-50%, -50%) scale(.3);}
+  to {opacity: 1; transform: translate(-50%, -50%) scale(1);}}
+
+@keyframes hideFormOpacity {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}

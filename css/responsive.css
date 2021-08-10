@@ -1,0 +1,70 @@
+@media only screen and (max-width: 850px) {
+main .card {
+	width: 25%;
+	padding: 3%;
+}
+footer .contact {
+	padding-left: 0;
+}
+
+footer .about {
+	padding-left: 0;
+}
+}
+
+@media only screen and (max-width: 650px) {
+header .header-container {
+	width: 100%;
+	padding: 0 5px 0 5px;
+}
+
+main .card {
+	width: 33.33%;
+	padding: 3.5%;
+}
+
+footer .about, footer .contact {
+	width: 100%;
+}
+
+footer .about h1 {
+	font-size: 35px;
+}
+
+footer .contact h2 {
+	font-size: 28px;
+}
+}
+
+@media only screen and (max-width: 449px) {
+	form {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 421px) {
+	header .header-signin-button {
+		display: none
+	}
+	header .hamburger {
+		display: flex;
+	}
+}
+
+@media only screen and (max-height: 499px) {
+	form {
+		height: 100%
+	}
+}
+
+@media only screen and (max-width:  425px) {
+	main .card-title {
+		font-size: 83%;
+	}
+}
+
+@media only screen and (max-width:  320px) {
+	main .card-title {
+		font-size: 70%;
+	}
+}
