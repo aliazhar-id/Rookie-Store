@@ -6,6 +6,23 @@ window.onbeforeunload = () => {
 // Disable right clicking event
 document.body.addEventListener('contextmenu', (e) => e.preventDefault());
 
+// Ripple FX onclick window
+document.onclick = () => rippleFX(event);
+window.oncontextmenu = () => rippleFX(event);
+
+function rippleFX(e) {
+	const ripple = document.createElement("div");
+
+	ripple.className = "ripple";
+	document.body.appendChild(ripple);
+
+	ripple.style.left = `${e.clientX}px`;
+	ripple.style.top = `${e.clientY}px`;
+
+	ripple.style.animation = "ripple-effect .3s  linear";
+	ripple.onanimationend = () => document.body.removeChild(ripple);
+}
+
 const form = document.querySelector('form'),
 	overlay = document.querySelector('.overlay');
 

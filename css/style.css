@@ -16,16 +16,15 @@
 
 /* particlesJS effect */
 #particles-js {
-	position: fixed;
-	bottom: 0;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
 }
 
 body {
 	background-color: var(--bgColor);
+	position: relative;
 }
 
 body::-webkit-scrollbar, form::-webkit-scrollbar { 
@@ -315,7 +314,7 @@ marquee:hover {
 
 main {
 	margin: auto;
-	padding-top: 150px;
+	padding-top: 130px;
 	max-width: 950px;
 	display: flex;
 	justify-content: center;
@@ -372,6 +371,7 @@ footer {
 	color: #fff;
 	text-shadow: 0.5px 0.5px 2px #00000080;
 	position: relative;
+	margin-top: 200px;
 }
 
 footer .footer-container {

@@ -6,11 +6,28 @@
     margin-top: 5px;
 }
 
+.ripple {
+   width: 8px;
+   height: 8px;
+   background-color: transparent;
+   position: fixed;
+   border-radius: 50%;
+   border: 0.1px solid #ffffff;
+   z-index: 10;
+}
+
 /*Animation Keyframes*/  
 @keyframes floating {
     0% {transform: translate(0, 0);}
     50% {transform: translate(-8px, 15px);}
     100% {transform: translate(0, 0);}    
+}
+
+@keyframes ripple-effect {
+   to {
+      transform: scale(12);
+      opacity: 0.01;
+   }
 }
 
 @keyframes animatetop {
