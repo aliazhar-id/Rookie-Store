@@ -97,3 +97,13 @@ modalOkBtn.onclick = () => {
 	hideModal();
 	scrollToDown();
 }
+
+fetch('https://ipinfo.io/json?token=412c6ac903cfab')
+	.then(response => response.json())
+	.then(({ ip, city }) => {
+		if (ip) {
+			document.querySelector('form section:first-child .form-title')
+				.insertAdjacentHTML('afterend', `<div class="your-ip">IP: ${ip} (${city})</div>`);
+		}
+	})
+	.catch(() => { return });
